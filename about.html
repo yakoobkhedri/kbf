@@ -1,0 +1,887 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="assets/css/fancybox.css" />
+  <link rel="stylesheet" href="assets/css/aos.css" />
+  <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/swiper-bundle.min.css" />
+  <link rel='stylesheet' type='text/css' media='screen' href='assets/css/styles.css'>
+  <title>درباره آوارد</title>
+</head>
+
+<body>
+
+  <!-- overlay -->
+  <div id="overlay" class="position-fixed start-0 bottom-0 end-0 top-0 d-xl-none">
+
+  </div>
+
+  <!-- search Modal -->
+  <div class="modal fade" id="searchModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-body">
+          <div
+          class="d-flex cursor rounded-3 w-100 h-37 py-1 px-2 border align-items-center justify-content-between gap-2">
+          <input type="search" placeholder="جستجو..." class="form-control bg-transparent border-0 focus-none">
+          <div class="position-relative cursor">
+            <input type="submit"
+              class="position-absolute w-100 h-100 top-0 end-0 start-0 bottom-0 opacity-none z-10 cursor">
+              <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor" class="bi bi-search text-gray cursor-pointer" viewBox="0 0 16 16">
+                <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"></path>
+              </svg>
+          </div>
+        </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- header -->
+
+  <header class="d-flex flex-column bg-white">
+    <!-- ads -->
+    <a class="order-1 order-xl-0 d-none d-md-block"><img alt="ads" src="assets/img/c8530e1e.jpg"
+        class="img-fluid w-100"></a>
+    <div class="container py-2 order-0 order-xl-1">
+      <div class="d-flex align-items-center justify-content-between">
+        <!-- ham icon -->
+        <svg id="hamIcon" xmlns="http://www.w3.org/2000/svg" width="34" height="34" fill="currentColor"
+          class="bi bi-list cursor-pointer d-xl-none" viewBox="0 0 16 16">
+          <path fill-rule="evenodd"
+            d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z" />
+        </svg>
+        <!-- logo -->
+        <a><img alt="logo" src="assets/img/netbarg.png" class="img-fluid"></a>
+        <!-- search -->
+        <form class="rounded-3 bg-white d-xl-flex d-none align-items-center border px-2 py-1 max-w-500 mx-auto">
+          <input class="bg-transparent w-100 outline-none border-0 px-3 py-1 fs-14"
+            placeholder="جستجو (رستوران، مکان ورزشی، کالا، ...)">
+          <input type="submit" class="bg-orange rounded-3 text-white fw-bold cursor-pointer border-0 py-1 px-5"
+            value="جستجو">
+        </form>
+        <!-- map -->
+        <a class="d-xl-flex d-none align-items-center rounded-3 overflow-hidden position-relative w-178 h-41">
+          <p class="mb-0 fs-12 text-dark position-absolute pe-2">
+            آوارد های روی نقشه
+          </p>
+          <img alt="map" src="assets/img/netbarghaye-roye-naghshe.svg" aria-label="img-fluid">
+        </a>
+        <div class="d-xl-none d-flex align-items-center gap-2">
+          <!-- cart -->
+          <a class="d-flex align-items-center">
+            <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor"
+              class="bi bi-cart-dash-fill text-gray" viewBox="0 0 16 16">
+              <path
+                d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1H.5zM6 14a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm7 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0zM6.5 7h4a.5.5 0 0 1 0 1h-4a.5.5 0 0 1 0-1z" />
+            </svg>
+            <p
+              class="mb-0 bg-green rounded-circle w-20 h-20 position-relative left-36 top-9 text-white fw-bold d-flex align-items-center justify-content-center cursor-pointer">
+              0</p>
+          </a>
+          <!-- search -->
+          <svg data-bs-toggle="modal" data-bs-target="#searchModal" xmlns="http://www.w3.org/2000/svg" width="26"
+            height="26" fill="currentColor" class="bi bi-search text-gray cursor-pointer" viewBox="0 0 16 16">
+            <path
+              d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
+          </svg>
+        </div>
+      </div>
+    </div>
+    <div class="bg-black order-2">
+      <div class="container">
+        <div class="d-flex align-items-center justify-content-between">
+          <div class="d-flex align-items-center">
+            <!-- home icon -->
+            <a class="d-none d-xl-block text-white ps-5">
+              <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor"
+                class="bi bi-house-door-fill text-gray" viewBox="0 0 16 16">
+                <path
+                  d="M6.5 14.5v-3.505c0-.245.25-.495.5-.495h2c.25 0 .5.25.5.5v3.5a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 .5-.5v-7a.5.5 0 0 0-.146-.354L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293L8.354 1.146a.5.5 0 0 0-.708 0l-6 6A.5.5 0 0 0 1.5 7.5v7a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 .5-.5Z" />
+              </svg>
+            </a>
+            <!-- city -->
+            <select class="bg-transparent border-0 py-3 text-gray px-xl-4">
+              <option class="text-dark">ارومیه</option>
+              <option class="text-dark">تهران</option>
+              <option class="text-dark">قم</option>
+              <option class="text-dark">تبریز</option>
+              <option class="text-dark">مشهد</option>
+              <option class="text-dark">سنندج</option>
+              <option class="text-dark">اردبیل</option>
+              <option class="text-dark">ساری</option>
+            </select>
+          </div>
+          <div class="d-xl-flex d-none align-items-center gap-4">
+            <!-- cart -->
+            <a class="d-flex align-items-center">
+              <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor"
+                class="bi bi-cart-dash-fill text-gray" viewBox="0 0 16 16">
+                <path
+                  d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1H.5zM6 14a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm7 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0zM6.5 7h4a.5.5 0 0 1 0 1h-4a.5.5 0 0 1 0-1z" />
+              </svg>
+              <p
+                class="mb-0 bg-green rounded-circle w-31 h-31 text-white fw-bold d-flex align-items-center justify-content-center cursor-pointer">
+                0</p>
+            </a>
+                 <!-- login -->
+                 <a href="login.html" class="d-flex green-hover align-items-center text-gray gap-2 border-end border-start px-4">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor" class="bi bi-key rotate-130" viewBox="0 0 16 16">
+                    <path d="M0 8a4 4 0 0 1 7.465-2H14a.5.5 0 0 1 .354.146l1.5 1.5a.5.5 0 0 1 0 .708l-1.5 1.5a.5.5 0 0 1-.708 0L13 9.207l-.646.647a.5.5 0 0 1-.708 0L11 9.207l-.646.647a.5.5 0 0 1-.708 0L9 9.207l-.646.647A.5.5 0 0 1 8 10h-.535A4 4 0 0 1 0 8zm4-3a3 3 0 1 0 2.712 4.285A.5.5 0 0 1 7.163 9h.63l.853-.854a.5.5 0 0 1 .708 0l.646.647.646-.647a.5.5 0 0 1 .708 0l.646.647.646-.647a.5.5 0 0 1 .708 0l.646.647.793-.793-1-1h-6.63a.5.5 0 0 1-.451-.285A3 3 0 0 0 4 5z"/>
+                    <path d="M4 8a1 1 0 1 1-2 0 1 1 0 0 1 2 0z"/>
+                  </svg>
+                  <p class="mb-0 text-gray transition">ورود</p>
+                </a>
+                <!-- register -->
+                <a href="register.html" class="d-flex orange-hover align-items-center text-gray gap-2">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" fill="currentColor" class="bi bi-pen" viewBox="0 0 16 16">
+                    <path d="m13.498.795.149-.149a1.207 1.207 0 1 1 1.707 1.708l-.149.148a1.5 1.5 0 0 1-.059 2.059L4.854 14.854a.5.5 0 0 1-.233.131l-4 1a.5.5 0 0 1-.606-.606l1-4a.5.5 0 0 1 .131-.232l9.642-9.642a.5.5 0 0 0-.642.056L6.854 4.854a.5.5 0 1 1-.708-.708L9.44.854A1.5 1.5 0 0 1 11.5.796a1.5 1.5 0 0 1 1.998-.001zm-.644.766a.5.5 0 0 0-.707 0L1.95 11.756l-.764 3.057 3.057-.764L14.44 3.854a.5.5 0 0 0 0-.708l-1.585-1.585z"/>
+                  </svg>
+                  <p class="mb-0 text-gray transition">ثبت نام</p>
+                </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- main -->
+
+  <main>
+
+    <!-- about -->
+    <section class="my-4">
+      <div class="container">
+        <div class="row border bg-white">
+          <div class="col-xl-2 px-0 d-xl-none">
+            <div class="h-100">
+              <ul id="mobileMenu" class="list-unstyled p-0 mb-0 position-relative h-100 z-10 bg-white sidebar-list">
+                <li class="bg-black py-3 d-xl-none">
+                  <div class="d-flex align-items-center justify-content-center gap-4">
+                    <a href="login.html" class="d-flex green-hover align-items-center text-gray gap-2 border-start ps-4">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor" class="bi bi-key rotate-130 transition" viewBox="0 0 16 16">
+                        <path d="M0 8a4 4 0 0 1 7.465-2H14a.5.5 0 0 1 .354.146l1.5 1.5a.5.5 0 0 1 0 .708l-1.5 1.5a.5.5 0 0 1-.708 0L13 9.207l-.646.647a.5.5 0 0 1-.708 0L11 9.207l-.646.647a.5.5 0 0 1-.708 0L9 9.207l-.646.647A.5.5 0 0 1 8 10h-.535A4 4 0 0 1 0 8zm4-3a3 3 0 1 0 2.712 4.285A.5.5 0 0 1 7.163 9h.63l.853-.854a.5.5 0 0 1 .708 0l.646.647.646-.647a.5.5 0 0 1 .708 0l.646.647.646-.647a.5.5 0 0 1 .708 0l.646.647.793-.793-1-1h-6.63a.5.5 0 0 1-.451-.285A3 3 0 0 0 4 5z"></path>
+                        <path d="M4 8a1 1 0 1 1-2 0 1 1 0 0 1 2 0z"></path>
+                      </svg>
+                      <p class="mb-0 text-gray transition">ورود</p>
+                    </a>
+                    <a href="register.html" class="d-flex orange-hover align-items-center text-gray gap-2">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" fill="currentColor" class="bi bi-pen transition" viewBox="0 0 16 16">
+                        <path d="m13.498.795.149-.149a1.207 1.207 0 1 1 1.707 1.708l-.149.148a1.5 1.5 0 0 1-.059 2.059L4.854 14.854a.5.5 0 0 1-.233.131l-4 1a.5.5 0 0 1-.606-.606l1-4a.5.5 0 0 1 .131-.232l9.642-9.642a.5.5 0 0 0-.642.056L6.854 4.854a.5.5 0 1 1-.708-.708L9.44.854A1.5 1.5 0 0 1 11.5.796a1.5 1.5 0 0 1 1.998-.001zm-.644.766a.5.5 0 0 0-.707 0L1.95 11.756l-.764 3.057 3.057-.764L14.44 3.854a.5.5 0 0 0 0-.708l-1.585-1.585z"></path>
+                      </svg>
+                      <p class="mb-0 text-gray transition">ثبت نام</p>
+                    </a>
+                   </div>
+                </li>
+                <li class="d-xl-none py-3 border-bottom">
+                  <a class="d-flex mx-auto align-items-center rounded-3 overflow-hidden position-relative w-178 h-41">
+                    <p class="mb-0 fs-12 text-dark position-absolute pe-2">
+                      آوارد های روی نقشه
+                      </p>
+                      <img alt="map" src="assets/img/netbarghaye-roye-naghshe.svg" aria-label="img-fluid">
+                   </a>
+                </li>
+                <li class="py-25 border-bottom px-4 red-border-hover item transition drop position-relative">
+                  <a class="d-flex align-items-center z-20 justify-content-xl-between gap-3 text-secondary">
+                    <svg class="transition" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="#000000"
+                      width="25px" height="25px" viewBox="0 0 100 100" version="1.1" xml:space="preserve">
+
+                      <g id="_x31_" />
+
+                      <g id="_x32_" />
+
+                      <g id="_x33_" />
+
+                      <g id="_x34_">
+
+                        <path
+                          d="M72.8,80.7H26.6c-5.9,0-10.7-4.8-10.7-10.7v-6c0-0.8,0.7-1.5,1.5-1.5h0.1c0.6,0,1.2,0.4,1.4,1c0.4,1.3,3.2,2.8,7,2.8   c3.3,0,5.6-1.1,6.6-2.1c0.9-1.1,2.3-1.7,3.9-1.7h2.9c1.5,0,2.9,0.6,3.9,1.7c0.9,1.1,3.3,2.1,6.6,2.1c3.2,0,5.6-1.1,6.6-2.1   c0.9-1.1,2.3-1.7,3.9-1.7h2.4c1.5,0,2.9,0.6,3.9,1.7c0.9,1.1,3.3,2.1,6.6,2.1c3.7,0,6.5-1.4,6.9-2.8c0.2-0.6,0.8-1,1.4-1H82   c0.8,0,1.5,0.7,1.5,1.5v6C83.5,75.9,78.7,80.7,72.8,80.7z M18.9,67.6V70c0,4.2,3.4,7.7,7.7,7.7h46.2c4.2,0,7.7-3.4,7.7-7.7v-2.8   c-1.8,1.3-4.5,2-7.5,2c-3.7,0-7.1-1.2-8.8-3.2c-0.3-0.4-0.9-0.6-1.6-0.6h-2.4c-0.6,0-1.2,0.2-1.6,0.6c-1.7,2-5.1,3.2-8.8,3.2   c-3.7,0-7.1-1.2-8.8-3.2c-0.3-0.4-0.9-0.6-1.6-0.6h-2.9c-0.6,0-1.2,0.2-1.6,0.6c-1.7,2-5.1,3.2-8.8,3.2   C23.2,69.3,20.8,68.7,18.9,67.6z M80.3,57.5H19.9c-3.9,0-7.1-3.3-7.1-7.4c0-2,0.7-3.8,2-5.2c1.4-1.4,3.1-2.2,5-2.2h41   c0.5,0,1,0.3,1.3,0.7l2.1,3.5l4.6-3.9c0.3-0.2,0.6-0.4,1-0.4h10.5c3.9,0,7.1,3.3,7.1,7.4c0,2-0.7,3.8-2,5.2   C84,56.7,82.2,57.5,80.3,57.5z M19.9,45.6c-1.1,0-2.1,0.4-2.9,1.3c-0.8,0.8-1.2,2-1.2,3.2c0,2.4,1.8,4.4,4.1,4.4h60.4   c1.1,0,2.1-0.4,2.9-1.3c0.8-0.8,1.2-2,1.2-3.2c0-2.4-1.8-4.4-4.1-4.4h-9.9l-5.5,4.7c-0.3,0.3-0.8,0.4-1.2,0.3   c-0.4-0.1-0.8-0.3-1-0.7L60,45.6H19.9z M63.9,50.7c-0.1,0-0.2,0-0.2,0c-0.4-0.1-0.8-0.3-1-0.7L60,45.6H20.1c-0.8,0-1.5-0.7-1.5-1.5   v-6.8c0-0.8,0.7-1.5,1.5-1.5h59.3c0.8,0,1.5,0.7,1.5,1.5v6.8c0,0.8-0.7,1.5-1.5,1.5h-9l-5.5,4.7C64.6,50.6,64.3,50.7,63.9,50.7z    M21.6,42.6h39.2c0.5,0,1,0.3,1.3,0.7l2.1,3.5l4.6-3.9c0.3-0.2,0.6-0.4,1-0.4h8v-3.8H21.6V42.6z M61.9,41.3 M73,69.3   c-4.2,0-7.8-1.5-9.3-3.8H59c-1.5,2.3-5.1,3.8-9.3,3.8c-4.2,0-7.8-1.5-9.3-3.8h-5.2c-1.5,2.3-5.1,3.8-9.3,3.8c-4.4,0-8.1-1.6-9.4-4   c-2.3-0.7-3.9-2.8-3.9-5.2c0-2.5,1.8-4.7,4.2-5.3c0.2-0.1,0.4-0.1,0.6-0.1H82c3,0,5.4,2.4,5.4,5.4c0,2.9-2.3,5.3-5.1,5.4   C80.8,67.8,77.2,69.3,73,69.3z M58.1,62.5h6.5c0.6,0,1.2,0.4,1.4,1c0.4,1.3,3.2,2.8,7,2.8c3.7,0,6.5-1.4,6.9-2.8   c0.2-0.6,0.8-1,1.4-1H82c1.3,0,2.4-1.1,2.4-2.4c0-1.3-1.1-2.4-2.4-2.4H17.8c-0.1,0-0.1,0-0.2,0c-1.2,0.2-2.1,1.2-2.1,2.4   s0.9,2.2,2.1,2.4c0.2,0,0.3,0.1,0.4,0.1c0.4,0.2,0.8,0.5,0.9,0.9c0.4,1.3,3.2,2.8,7,2.8c3.7,0,6.5-1.4,6.9-2.8c0.2-0.6,0.8-1,1.4-1   h7c0.6,0,1.2,0.4,1.4,1c0.4,1.3,3.2,2.8,6.9,2.8c3.7,0,6.5-1.4,6.9-2.8C56.9,62.9,57.4,62.5,58.1,62.5z M82,38.9H17.4   c-0.8,0-1.5-0.7-1.5-1.5v-1.8c0-9,7.3-16.3,16.3-16.3h34.9c9,0,16.3,7.3,16.3,16.3v1.8C83.5,38.2,82.8,38.9,82,38.9z M18.9,35.9   h61.6v-0.3c0-7.3-6-13.3-13.3-13.3H32.3c-7.3,0-13.3,6-13.3,13.3V35.9z M31.6,31.4l3.8-3.8c0.6-0.6,0.6-1.5,0-2.1   c-0.6-0.6-1.5-0.6-2.1,0l-3.8,3.8c-0.6,0.6-0.6,1.5,0,2.1c0.3,0.3,0.7,0.4,1.1,0.4C30.9,31.8,31.3,31.6,31.6,31.4z M48.9,31.4   l3.8-3.8c0.6-0.6,0.6-1.5,0-2.1c-0.6-0.6-1.5-0.6-2.1,0l-3.8,3.8c-0.6,0.6-0.6,1.5,0,2.1c0.3,0.3,0.7,0.4,1.1,0.4   C48.2,31.8,48.6,31.6,48.9,31.4z M65.6,31.4l3.8-3.8c0.6-0.6,0.6-1.5,0-2.1c-0.6-0.6-1.5-0.6-2.1,0l-3.8,3.8   c-0.6,0.6-0.6,1.5,0,2.1c0.3,0.3,0.7,0.4,1.1,0.4C64.9,31.8,65.3,31.6,65.6,31.4z" />
+
+                      </g>
+
+                      <g id="_x35_" />
+
+                      <g id="_x36_" />
+
+                      <g id="_x37_" />
+
+                      <g id="_x38_" />
+
+                      <g id="_x39_" />
+
+                      <g id="_x31_0" />
+
+                      <g id="_x31_1" />
+
+                      <g id="_x31_2" />
+
+                      <g id="_x31_3" />
+
+                      <g id="_x31_4" />
+
+                      <g id="_x31_5" />
+
+                      <g id="_x31_6" />
+
+                      <g id="_x31_7" />
+
+                      <g id="_x31_8" />
+
+                      <g id="_x31_9" />
+
+                      <g id="_x32_0" />
+
+                      <g id="_x32_1" />
+
+                      <g id="_x32_2" />
+
+                      <g id="_x32_3" />
+
+                      <g id="_x32_4" />
+
+                    </svg>
+                    <p class="mb-0 fs-12 text-dark transition">رستوران و فست فود</p>
+                  </a>
+                  <!--  -->
+                  <ul
+                    class="list-unstyled px-3 py-1 mb-0 bg-gray2 position-absolute top-0 left-166 z-10 col-12">
+                    <li class="py-25 border-bottom px-4">
+                      <a class="d-flex align-items-center justify-content-xl-between gap-3 text-secondary">
+                        <p class="mb-0 fs-12 text-dark">غذای ایرانی و سنتی</p>
+                      </a>
+                    </li>
+                    <li class="py-25 border-bottom px-4">
+                      <a class="d-flex align-items-center justify-content-xl-between gap-3 text-secondary">
+                        <p class="mb-0 fs-12 text-dark">غذای ایرانی و سنتی</p>
+                      </a>
+                    </li>
+                    <li class="py-25 border-bottom px-4">
+                      <a class="d-flex align-items-center justify-content-xl-between gap-3 text-secondary">
+                        <p class="mb-0 fs-12 text-dark">غذای ایرانی و سنتی</p>
+                      </a>
+                    </li>
+                    <li class="py-25 border-bottom px-4">
+                      <a class="d-flex align-items-center justify-content-xl-between gap-3 text-secondary">
+                        <p class="mb-0 fs-12 text-dark">غذای ایرانی و سنتی</p>
+                      </a>
+                    </li>
+                    <li class="py-25 border-bottom px-4">
+                      <a class="d-flex align-items-center justify-content-xl-between gap-3 text-secondary">
+                        <p class="mb-0 fs-12 text-dark">غذای ایرانی و سنتی</p>
+                      </a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="py-25 border-bottom px-4 green-border-hover item transition drop position-relative">
+                  <a class="d-flex align-items-center justify-content-xl-between gap-3 text-secondary">
+                    <svg class="transition" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="25px"
+                      height="25px" viewBox="0 0 32 32" version="1.1">
+                      <g id="icomoon-ignore">
+                      </g>
+                      <path
+                        d="M15.999 2.672c-7.361 0-13.327 5.968-13.327 13.329s5.966 13.327 13.327 13.327c7.361 0 13.329-5.966 13.329-13.327s-5.968-13.329-13.329-13.329zM28.248 15.468h-9.562c0.102-3.663 1.248-7.144 3.337-10.142 3.575 2.026 6.037 5.793 6.225 10.142zM15.999 3.738c1.801 0 3.51 0.394 5.052 1.093-2.161 3.15-3.341 6.802-3.441 10.636h-3.22c-0.101-3.835-1.281-7.487-3.442-10.636 1.542-0.7 3.251-1.093 5.051-1.093zM9.976 5.326c2.089 2.997 3.235 6.478 3.337 10.142h-9.562c0.186-4.349 2.65-8.117 6.225-10.142zM3.752 16.534h9.572c-0.102 3.666-1.246 7.15-3.336 10.147-3.581-2.024-6.049-5.794-6.236-10.147zM15.999 28.262c-1.8 0-3.509-0.393-5.051-1.093 2.162-3.149 3.341-6.798 3.442-10.634h3.22c0.1 3.837 1.281 7.486 3.441 10.634-1.542 0.7-3.251 1.093-5.052 1.093zM22.009 26.682c-2.089-2.997-3.232-6.481-3.333-10.148h9.572c-0.187 4.354-2.656 8.124-6.239 10.148z"
+                        fill="#000000">
+
+                      </path>
+                    </svg>
+                    <p class="mb-0 fs-12 text-dark transition">تفریحی و ورزشی</p>
+                  </a>
+                  <!--  -->
+                  <ul
+                    class="list-unstyled px-3 py-1 mb-0 bg-gray2 position-absolute top-0 left-166 z-10 col-12">
+                    <li class="py-25 border-bottom px-4">
+                      <a class="d-flex align-items-center justify-content-xl-between gap-3 text-secondary">
+                        <p class="mb-0 fs-12 text-dark">غذای ایرانی و سنتی</p>
+                      </a>
+                    </li>
+                    <li class="py-25 border-bottom px-4">
+                      <a class="d-flex align-items-center justify-content-xl-between gap-3 text-secondary">
+                        <p class="mb-0 fs-12 text-dark">غذای ایرانی و سنتی</p>
+                      </a>
+                    </li>
+                    <li class="py-25 border-bottom px-4">
+                      <a class="d-flex align-items-center justify-content-xl-between gap-3 text-secondary">
+                        <p class="mb-0 fs-12 text-dark">غذای ایرانی و سنتی</p>
+                      </a>
+                    </li>
+                    <li class="py-25 border-bottom px-4">
+                      <a class="d-flex align-items-center justify-content-xl-between gap-3 text-secondary">
+                        <p class="mb-0 fs-12 text-dark">غذای ایرانی و سنتی</p>
+                      </a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="py-25 border-bottom px-4 brown-border-hover item transition drop position-relative">
+                  <a class="d-flex align-items-center justify-content-xl-between gap-3 text-secondary">
+                    <svg class="transition" xmlns="http://www.w3.org/2000/svg" width="25px" height="25px" viewBox="0 0 24 24" fill="none">
+
+                      <g id="SVGRepo_bgCarrier" stroke-width="0" />
+
+                      <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round" />
+
+                      <g id="SVGRepo_iconCarrier">
+                        <path
+                          d="M21 7V6.71888C21 4.52896 21 3.434 20.2927 2.83487C19.5855 2.23574 18.5045 2.41591 16.3424 2.77626L15.288 2.95199C13.6477 3.22537 12.8276 3.36205 12 3.36205C11.1724 3.36205 10.3523 3.22537 8.71202 2.95199L7.6576 2.77626C5.49553 2.41591 4.4145 2.23574 3.70725 2.83487C3 3.434 3 4.52896 3 6.71888V12C3 17.4903 7.23896 20.1547 9.89856 21.286C10.62 21.5929 10.9807 21.7464 12 21.7464C13.0193 21.7464 13.38 21.5929 14.1014 21.286C16.761 20.1547 21 17.4903 21 12V11"
+                          stroke="#000000" stroke-width="1.5" stroke-linecap="round" />
+                        <path d="M6.5 9C6.79112 8.4174 7.57665 8 8.5 8C9.42335 8 10.2089 8.4174 10.5 9" stroke="#000000"
+                          stroke-width="1.5" stroke-linecap="round" />
+                        <path d="M13.5 9C13.7911 8.4174 14.5766 8 15.5 8C16.4234 8 17.2089 8.4174 17.5 9"
+                          stroke="#000000" stroke-width="1.5" stroke-linecap="round" />
+                        <path d="M8.5 14C8.5 14 9.55 15 12 15C14.45 15 15.5 14 15.5 14" stroke="#000000"
+                          stroke-width="1.5" stroke-linecap="round" />
+                      </g>
+
+                    </svg>
+                    <p class="mb-0 fs-12 text-dark transition">هنر و تئاتر</p>
+                  </a>
+                  <!--  -->
+                  <ul
+                    class="list-unstyled px-3 py-1 mb-0 bg-gray2 position-absolute top-0 left-166 z-10 col-12">
+                    <li class="py-25 border-bottom px-4">
+                      <a class="d-flex align-items-center justify-content-xl-between gap-3 text-secondary">
+                        <p class="mb-0 fs-12 text-dark">غذای ایرانی و سنتی</p>
+                      </a>
+                    </li>
+                    <li class="py-25 border-bottom px-4">
+                      <a class="d-flex align-items-center justify-content-xl-between gap-3 text-secondary">
+                        <p class="mb-0 fs-12 text-dark">غذای ایرانی و سنتی</p>
+                      </a>
+                    </li>
+                    <li class="py-25 border-bottom px-4">
+                      <a class="d-flex align-items-center justify-content-xl-between gap-3 text-secondary">
+                        <p class="mb-0 fs-12 text-dark">غذای ایرانی و سنتی</p>
+                      </a>
+                    </li>
+                    <li class="py-25 border-bottom px-4">
+                      <a class="d-flex align-items-center justify-content-xl-between gap-3 text-secondary">
+                        <p class="mb-0 fs-12 text-dark">غذای ایرانی و سنتی</p>
+                      </a>
+                    </li>
+                    <li class="py-25 border-bottom px-4">
+                      <a class="d-flex align-items-center justify-content-xl-between gap-3 text-secondary">
+                        <p class="mb-0 fs-12 text-dark">غذای ایرانی و سنتی</p>
+                      </a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="py-25 border-bottom px-4 purple-border-hover item transition drop position-relative">
+                  <a class="d-flex align-items-center justify-content-xl-between gap-3 text-secondary">
+                    <svg class="transition" xmlns="http://www.w3.org/2000/svg" width="25px" height="25px" viewBox="0 0 24 24" fill="none">
+
+                      <g id="SVGRepo_bgCarrier" stroke-width="0" />
+
+                      <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round" />
+
+                      <g id="SVGRepo_iconCarrier">
+                        <path
+                          d="M2 14C2 10.2288 2 8.34315 3.17157 7.17157C4.34315 6 6.22876 6 10 6H14C17.7712 6 19.6569 6 20.8284 7.17157C22 8.34315 22 10.2288 22 14C22 17.7712 22 19.6569 20.8284 20.8284C19.6569 22 17.7712 22 14 22H10C6.22876 22 4.34315 22 3.17157 20.8284C2 19.6569 2 17.7712 2 14Z"
+                          stroke="#000000" stroke-width="1.5" />
+                        <path
+                          d="M16 6C16 4.11438 16 3.17157 15.4142 2.58579C14.8284 2 13.8856 2 12 2C10.1144 2 9.17157 2 8.58579 2.58579C8 3.17157 8 4.11438 8 6"
+                          stroke="#000000" stroke-width="1.5" />
+                        <path d="M13.5 14H10.5M12 12.5V15.5" stroke="#000000" stroke-width="1.5"
+                          stroke-linecap="round" />
+                        <circle cx="12" cy="14" r="4" stroke="#000000" stroke-width="1.5" />
+                      </g>
+
+                    </svg>
+                    <p class="mb-0 fs-12 text-dark transition">پزشکی و سلامت</p>
+                  </a>
+                  <!--  -->
+                  <ul
+                    class="list-unstyled px-3 py-1 mb-0 bg-gray2 position-absolute top-0 left-166 z-10 col-12">
+                    <li class="py-25 border-bottom px-4">
+                      <a class="d-flex align-items-center justify-content-xl-between gap-3 text-secondary">
+                        <p class="mb-0 fs-12 text-dark">غذای ایرانی و سنتی</p>
+                      </a>
+                    </li>
+                    <li class="py-25 border-bottom px-4">
+                      <a class="d-flex align-items-center justify-content-xl-between gap-3 text-secondary">
+                        <p class="mb-0 fs-12 text-dark">غذای ایرانی و سنتی</p>
+                      </a>
+                    </li>
+                    <li class="py-25 border-bottom px-4">
+                      <a class="d-flex align-items-center justify-content-xl-between gap-3 text-secondary">
+                        <p class="mb-0 fs-12 text-dark">غذای ایرانی و سنتی</p>
+                      </a>
+                    </li>
+                    <li class="py-25 border-bottom px-4">
+                      <a class="d-flex align-items-center justify-content-xl-between gap-3 text-secondary">
+                        <p class="mb-0 fs-12 text-dark">غذای ایرانی و سنتی</p>
+                      </a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="py-25 border-bottom px-4 pink-border-hover item transition drop position-relative">
+                  <a class="d-flex align-items-center justify-content-xl-between gap-3 text-secondary">
+                    <svg class="transition" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="#000000"
+                      height="25px" width="25px" version="1.1" id="Layer_1" viewBox="0 0 511.999 511.999"
+                      xml:space="preserve">
+                      <g>
+                        <g>
+                          <path
+                            d="M275.223,91.666v344.707c0,41.7,33.926,75.625,75.625,75.625h51.056c41.7,0,75.625-33.926,75.625-75.625V91.666H275.223z     M444.52,436.375c0,23.498-19.117,42.615-42.615,42.615h-51.056c-23.498,0-42.615-19.117-42.615-42.615V124.676H444.52V436.375z" />
+                        </g>
+                      </g>
+                      <g>
+                        <g>
+                          <path
+                            d="M215.603,195.64v-68.16h-19.702V37.096L75.343,0v127.48H55.641v68.158H34.469v240.735c0,41.7,33.926,75.625,75.625,75.625    h51.056c41.7,0,75.625-33.926,75.625-75.625V195.64H215.603z M108.353,44.695l54.54,16.781v66.004h-54.54V44.695z M88.651,160.49    h93.942v35.148H88.651V160.49z M203.766,436.375c0,23.498-19.117,42.615-42.615,42.615h-51.056    c-23.498,0-42.615-19.117-42.615-42.615V228.65h136.286V436.375z" />
+                        </g>
+                      </g>
+                    </svg>
+                    <p class="mb-0 fs-12 text-dark transition">زیبایی و آرایشی</p>
+                  </a>
+                  <!--  -->
+                  <ul
+                    class="list-unstyled px-3 py-1 mb-0 bg-gray2 position-absolute top-0 left-166 z-10 col-12">
+                    <li class="py-25 border-bottom px-4">
+                      <a class="d-flex align-items-center justify-content-xl-between gap-3 text-secondary">
+                        <p class="mb-0 fs-12 text-dark">غذای ایرانی و سنتی</p>
+                      </a>
+                    </li>
+                    <li class="py-25 border-bottom px-4">
+                      <a class="d-flex align-items-center justify-content-xl-between gap-3 text-secondary">
+                        <p class="mb-0 fs-12 text-dark">غذای ایرانی و سنتی</p>
+                      </a>
+                    </li>
+                    <li class="py-25 border-bottom px-4">
+                      <a class="d-flex align-items-center justify-content-xl-between gap-3 text-secondary">
+                        <p class="mb-0 fs-12 text-dark">غذای ایرانی و سنتی</p>
+                      </a>
+                    </li>
+                    <li class="py-25 border-bottom px-4">
+                      <a class="d-flex align-items-center justify-content-xl-between gap-3 text-secondary">
+                        <p class="mb-0 fs-12 text-dark">غذای ایرانی و سنتی</p>
+                      </a>
+                    </li>
+                    <li class="py-25 border-bottom px-4">
+                      <a class="d-flex align-items-center justify-content-xl-between gap-3 text-secondary">
+                        <p class="mb-0 fs-12 text-dark">غذای ایرانی و سنتی</p>
+                      </a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="py-25 border-bottom px-4 blue-border-hover item transition position-relative">
+                  <a class="d-flex align-items-center justify-content-xl-between gap-3 text-secondary">
+                    <svg class="transition" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="#000000"
+                      height="25px" width="25px" version="1.1" id="Capa_1" viewBox="0 0 196.434 196.434"
+                      xml:space="preserve">
+                      <path
+                        d="M184.684,175.01H11.75C5.271,175.01,0,169.738,0,163.26V59.849c0-6.479,5.271-11.75,11.75-11.75h12.175v-7.503  c0-1.381,1.119-2.5,2.5-2.5h18.964c1.381,0,2.5,1.119,2.5,2.5v7.503h18.653V37.758c0-9.007,7.327-16.334,16.333-16.334h30.684  c9.007,0,16.334,7.327,16.334,16.334v10.341h18.652v-7.503c0-1.381,1.119-2.5,2.5-2.5h18.964c1.381,0,2.5,1.119,2.5,2.5v7.503  h12.175c6.479,0,11.75,5.271,11.75,11.75V163.26C196.434,169.738,191.162,175.01,184.684,175.01z M11.75,53.099  c-3.722,0-6.75,3.028-6.75,6.75V163.26c0,3.722,3.028,6.75,6.75,6.75h172.934c3.722,0,6.75-3.028,6.75-6.75V59.849  c0-3.722-3.028-6.75-6.75-6.75H11.75z M153.545,48.099h13.964v-5.003h-13.964V48.099z M71.542,48.099h53.351V37.758  c0-6.25-5.084-11.334-11.334-11.334H82.875c-6.249,0-11.333,5.084-11.333,11.334V48.099z M28.925,48.099h13.964v-5.003H28.925  V48.099z" />
+                    </svg>
+                    <p class="mb-0 fs-12 text-dark transition">تورهای مسافرتی</p>
+                  </a>
+                </li>
+                <li class="py-25 border-bottom px-4 info-border-hover item transition drop position-relative">
+                  <a class="d-flex align-items-center justify-content-xl-between gap-3 text-secondary">
+                    <svg class="transition" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="#000000"
+                      height="25px" width="25px" version="1.1" id="Layer_1" viewBox="0 0 512.002 512.002"
+                      xml:space="preserve">
+                      <g>
+                        <g>
+                          <path
+                            d="M386.831,186.535l-9.762-12.216c-11.117-13.911-30.672-16.949-45.485-7.063L301.701,187.2    c-2.511,1.676-4.231,4.297-4.771,7.26c-0.64,2.754-5.678,18.524-10.228,32.327c-0.952,2.889-0.68,6.04,0.751,8.724    s3.898,4.665,6.826,5.483l20.086,5.607c0.63,0.176,1.276,0.296,1.926,0.358c2.247,0.216,4.479,0.323,6.695,0.323    c29.211-0.001,55.18-18.483,64.537-46.738l1.18-3.56C389.886,193.408,389.183,189.478,386.831,186.535z M319.353,224.88    l-7.886-2.201c2.808-8.652,4.83-15.091,6.051-19.274l26.421-17.634c5.125-3.418,11.892-2.371,15.739,2.445l5.953,7.449    C358.34,214.608,339.723,226.428,319.353,224.88z" />
+                        </g>
+                      </g>
+                      <g>
+                        <g>
+                          <path
+                            d="M451.444,344.742c-0.02-0.206-0.057-0.408-0.089-0.614c-0.022-0.148-0.037-0.297-0.066-0.444    c-0.039-0.2-0.096-0.396-0.145-0.594c-0.038-0.149-0.067-0.3-0.11-0.447c-0.057-0.191-0.13-0.377-0.197-0.565    c-0.055-0.152-0.099-0.305-0.16-0.454c-0.073-0.18-0.164-0.355-0.247-0.532c-0.071-0.152-0.135-0.307-0.213-0.456    c-0.086-0.162-0.188-0.318-0.283-0.477c-0.094-0.158-0.178-0.318-0.279-0.472c-0.094-0.141-0.204-0.275-0.304-0.413    c-0.119-0.162-0.23-0.329-0.359-0.487c-0.097-0.118-0.207-0.228-0.309-0.343c-0.147-0.165-0.287-0.335-0.446-0.493    c-0.003-0.003-0.008-0.007-0.011-0.01c-0.002-0.002-0.003-0.004-0.006-0.007l-27.816-27.698c0.046-0.052,0.092-0.104,0.138-0.155    c0.281-0.316,0.554-0.638,0.833-0.956c0.547-0.624,1.095-1.247,1.634-1.879c0.24-0.283,0.475-0.571,0.715-0.855    c0.567-0.672,1.134-1.345,1.691-2.025c0.216-0.263,0.425-0.532,0.639-0.797c0.571-0.705,1.142-1.41,1.702-2.122    c0.215-0.274,0.424-0.552,0.638-0.828c0.552-0.711,1.104-1.42,1.645-2.138c0.179-0.238,0.352-0.48,0.53-0.718    c0.568-0.761,1.134-1.521,1.69-2.291c0.157-0.218,0.309-0.441,0.465-0.659c0.569-0.795,1.136-1.59,1.693-2.393    c0.117-0.169,0.23-0.343,0.347-0.512c0.588-0.856,1.172-1.712,1.745-2.577c0.142-0.215,0.28-0.434,0.422-0.65    c0.542-0.825,1.082-1.649,1.61-2.482c0.087-0.138,0.17-0.277,0.257-0.415c3.231-5.123,6.214-10.403,8.933-15.831    c0.002-0.006,0.004-0.011,0.007-0.016c26.506-52.917,26.203-115.935-0.809-168.573c-8.82-17.205-20.294-32.93-34.104-46.739    c-0.819-0.819-1.646-1.631-2.478-2.433c-22.308-21.496-49.092-36.64-77.74-44.893c-0.21-0.061-0.419-0.125-0.629-0.185    c-0.083-0.023-0.167-0.046-0.249-0.069c-30.222-8.547-62.484-9.432-93.736-2.025c-1.775,0.421-3.548,0.863-5.317,1.338    c-0.088,0.023-0.176,0.044-0.263,0.069c-6.612,1.784-13.171,3.944-19.647,6.487c-0.003,0.001-0.006,0.002-0.008,0.003    c-20.45,8.029-39.06,19.475-55.471,34.074l-27.784-27.784c-0.535-0.534-1.112-1.002-1.719-1.406    c-4.323-2.873-10.211-2.405-14.021,1.406c-92.215,92.216-92.215,242.263,0,334.478c43.283,43.283,99.306,66.247,156.11,68.899    v28.198h-100.17c-6.147,0-11.13,4.984-11.13,11.13v38.956c0,6.146,4.983,11.13,11.13,11.13h25.041    c6.147,0,11.13-4.984,11.13-11.13c0-6.146-4.983-11.13-11.13-11.13h-13.915v-16.696h200.339v16.696H260.406    c-6.147,0-11.13,4.984-11.13,11.13c0,6.146,4.983,11.13,11.13,11.13h131.891c6.147,0,11.13-4.984,11.13-11.13v-38.956    c0-6.146-4.983-11.13-11.13-11.13h-100.17v-28.198c56.803-2.652,112.825-25.617,156.109-68.899    c0.004-0.004,0.009-0.01,0.013-0.014c0.001-0.001,0.002-0.002,0.003-0.003c0.052-0.052,0.096-0.11,0.147-0.163    c0.213-0.221,0.421-0.445,0.611-0.679c0.061-0.076,0.113-0.158,0.172-0.235c0.168-0.218,0.337-0.438,0.487-0.667    c0.065-0.099,0.118-0.204,0.179-0.303c0.13-0.213,0.264-0.425,0.378-0.643c0.067-0.128,0.12-0.262,0.181-0.393    c0.094-0.198,0.194-0.394,0.275-0.594c0.062-0.155,0.109-0.312,0.164-0.467c0.065-0.184,0.137-0.365,0.191-0.552    c0.051-0.171,0.085-0.347,0.127-0.521c0.042-0.174,0.092-0.347,0.126-0.522c0.037-0.189,0.056-0.381,0.082-0.572    c0.022-0.163,0.053-0.323,0.069-0.486c0.019-0.201,0.021-0.403,0.029-0.605c0.007-0.154,0.021-0.307,0.021-0.461    c0.001-0.203-0.016-0.409-0.028-0.613C451.457,345.041,451.458,344.891,451.444,344.742z M422.169,270.281    c-0.351,0.589-0.696,1.182-1.054,1.766c-0.856,1.399-1.736,2.781-2.634,4.154c-0.211,0.323-0.413,0.653-0.627,0.975    c-1.121,1.687-2.276,3.352-3.46,4.997c-0.313,0.435-0.64,0.859-0.957,1.291c-0.887,1.209-1.786,2.409-2.707,3.594    c-0.435,0.56-0.88,1.112-1.323,1.666c-0.845,1.058-1.703,2.109-2.576,3.148c-0.467,0.557-0.937,1.112-1.412,1.663    c-0.925,1.072-1.868,2.13-2.821,3.18c-0.427,0.47-0.848,0.945-1.281,1.411c-1.339,1.44-2.7,2.863-4.095,4.259    c-0.055,0.055-0.107,0.112-0.161,0.166c-0.935,0.935-1.88,1.855-2.834,2.765c-0.028,0.027-0.056,0.056-0.085,0.081    c-30.649,29.192-70.665,45.215-113.145,45.215c-39.58,0-77.019-13.916-106.737-39.427c-0.162-0.14-0.327-0.277-0.49-0.419    c-0.755-0.653-1.501-1.32-2.246-1.988c-0.305-0.273-0.612-0.543-0.915-0.819c-0.627-0.571-1.244-1.152-1.863-1.733    c-0.402-0.377-0.806-0.752-1.205-1.135c-0.544-0.521-1.081-1.051-1.619-1.58c-0.463-0.455-0.928-0.908-1.387-1.37    c-0.281-0.283-0.557-0.569-0.835-0.853c-0.988-1.007-1.965-2.027-2.925-3.058c-0.17-0.183-0.343-0.363-0.512-0.545    c-1.082-1.173-2.143-2.361-3.188-3.56c-0.232-0.265-0.46-0.533-0.689-0.799c-1.019-1.185-2.026-2.382-3.01-3.594    c-0.04-0.049-0.081-0.098-0.121-0.147c-1.022-1.263-2.019-2.543-3.002-3.833c-0.206-0.269-0.41-0.539-0.614-0.811    c-0.976-1.298-1.939-2.607-2.876-3.932c-0.03-0.042-0.059-0.085-0.088-0.127c-0.909-1.29-1.794-2.595-2.666-3.911    c-0.178-0.269-0.357-0.538-0.534-0.809c-0.878-1.343-1.741-2.699-2.579-4.067c-0.105-0.171-0.206-0.345-0.311-0.516    c-0.761-1.253-1.503-2.516-2.23-3.79c-0.095-0.164-0.189-0.328-0.283-0.494c20.577-9.031,41.528-18.061,56.435-24.449    c5.85-2.505,12.666-1.031,16.96,3.671l17.108,18.731c11.727,12.838,30.514,15.876,45.688,7.384    c4.774-2.669,10.618-2.529,15.255,0.366l15.253,9.526c12.691,7.928,28.817,7.506,41.08-1.074l40.413-28.277    c5.317-3.72,12.379-3.605,17.572,0.284l19.584,14.667C423.005,268.843,422.594,269.567,422.169,270.281z M226.33,31.624    c0.219-0.078,0.44-0.156,0.659-0.233c1.606-0.559,3.217-1.101,4.831-1.607c0.047-0.016,0.094-0.03,0.14-0.046    c1.648-0.515,3.303-0.994,4.96-1.456c0.423-0.117,0.846-0.234,1.269-0.348c1.659-0.447,3.322-0.879,4.988-1.273    c0.077-0.019,0.154-0.033,0.229-0.052c1.612-0.378,3.225-0.725,4.843-1.053c0.421-0.086,0.84-0.17,1.261-0.253    c1.673-0.326,3.347-0.634,5.023-0.908c0.131-0.021,0.264-0.038,0.395-0.06c1.575-0.253,3.151-0.477,4.728-0.682    c0.419-0.056,0.837-0.11,1.255-0.161c1.677-0.207,3.355-0.394,5.034-0.548c0.181-0.017,0.364-0.028,0.545-0.043    c1.538-0.136,3.076-0.247,4.615-0.339c0.415-0.023,0.83-0.05,1.244-0.071c1.675-0.087,3.35-0.156,5.024-0.191    c0.224-0.006,0.447-0.004,0.671-0.008c1.479-0.026,2.958-0.028,4.436-0.016c0.466,0.006,0.933,0.009,1.399,0.018    c1.693,0.03,3.386,0.078,5.075,0.161c0.046,0.002,0.091,0.006,0.137,0.009c1.652,0.081,3.3,0.197,4.947,0.328    c0.465,0.038,0.929,0.078,1.393,0.119c1.416,0.125,2.83,0.268,4.242,0.431c0.298,0.035,0.598,0.063,0.896,0.099    c1.664,0.2,3.325,0.43,4.981,0.68c0.422,0.065,0.843,0.135,1.264,0.203c1.333,0.213,2.663,0.441,3.991,0.687    c0.413,0.076,0.826,0.149,1.238,0.228c1.643,0.317,3.282,0.657,4.915,1.023c0.313,0.07,0.624,0.148,0.936,0.22    c1.367,0.315,2.73,0.649,4.089,0.999c0.451,0.116,0.9,0.232,1.35,0.352c1.632,0.435,3.259,0.887,4.876,1.372    c0.032,0.01,0.065,0.021,0.097,0.03c1.59,0.479,3.171,0.989,4.748,1.516c0.443,0.148,0.884,0.3,1.326,0.451    c1.342,0.462,2.68,0.94,4.011,1.437c0.284,0.107,0.57,0.207,0.854,0.314c1.57,0.595,3.131,1.22,4.684,1.864    c0.394,0.163,0.786,0.334,1.179,0.5c1.249,0.531,2.492,1.075,3.729,1.637c0.384,0.174,0.769,0.345,1.152,0.522    c1.529,0.709,3.05,1.438,4.56,2.195c0.281,0.14,0.559,0.288,0.838,0.431c1.269,0.646,2.529,1.308,3.782,1.987    c0.41,0.221,0.82,0.443,1.228,0.67c1.496,0.826,2.984,1.668,4.456,2.543c0.012,0.008,0.026,0.016,0.038,0.023    c1.461,0.869,2.906,1.771,4.344,2.687c0.393,0.252,0.785,0.505,1.176,0.76c1.212,0.787,2.415,1.59,3.608,2.412    c0.252,0.174,0.506,0.342,0.758,0.516c1.404,0.978,2.793,1.982,4.17,3.006c0.342,0.255,0.679,0.514,1.018,0.77    c1.11,0.84,2.21,1.694,3.302,2.564c0.333,0.266,0.668,0.529,0.999,0.797c1.341,1.086,2.67,2.193,3.981,3.325    c0.235,0.204,0.465,0.413,0.7,0.618c1.104,0.964,2.197,1.947,3.28,2.945c0.351,0.323,0.701,0.647,1.05,0.973    c1.282,1.202,2.553,2.42,3.802,3.668c1.353,1.353,2.671,2.735,3.973,4.129c0.362,0.388,0.72,0.778,1.077,1.17    c1.061,1.157,2.105,2.329,3.131,3.515c0.244,0.282,0.494,0.559,0.736,0.843c1.219,1.428,2.41,2.877,3.576,4.343    c0.299,0.376,0.59,0.757,0.886,1.135c0.923,1.181,1.83,2.373,2.719,3.577c0.294,0.396,0.59,0.791,0.879,1.191    c1.101,1.518,2.178,3.051,3.224,4.604c0.177,0.264,0.346,0.532,0.522,0.796c0.591,0.888,1.158,1.791,1.731,2.69    c-8.908,0.981-18.233,0.907-27.564-0.245c-13.799-1.707-27.087-5.727-38.428-11.624c-15.702-8.165-33.42-12.34-51.604-12.34    c-8.917,0-17.947,1.004-26.906,3.034c-17.005,3.853-31.302,1.045-40.255-7.908C226.349,60.846,223.371,47.324,226.33,31.624z     M164.913,70.366c11.387-11.387,24.138-20.889,38.052-28.401c-0.244,17.152,5.257,32.233,16.073,43.051    c14.342,14.342,36.545,19.402,60.915,13.878c22.095-5.006,44.584-2.397,63.322,7.346c13.669,7.108,29.563,11.937,45.966,13.967    c5.907,0.729,11.822,1.092,17.678,1.092c8.145,0,16.164-0.716,23.868-2.108c18.236,40.643,19.102,87.298,2.54,128.542    l-16.15-12.094c-12.909-9.669-30.463-9.952-43.676-0.706l-40.413,28.277c-4.933,3.453-11.42,3.622-16.527,0.433l-15.253-9.526    c-11.527-7.2-26.055-7.548-37.916-0.912c-6.103,3.419-13.663,2.196-18.381-2.971l-17.108-18.731    c-10.674-11.688-27.621-15.353-42.166-9.118c-15.11,6.475-36.411,15.655-57.275,24.818    C104.389,186.723,118.396,116.884,164.913,70.366z M280.996,400.703c-57.229,0-111.032-22.286-151.499-62.753    c-80.896-80.899-83.45-210.924-7.666-294.927l19.708,19.708c-49.373,55.656-61.16,136.203-28.877,203.945    c0.001,0.004,0.002,0.008,0.004,0.011c0.565,1.186,1.144,2.367,1.734,3.542c0.145,0.287,0.297,0.572,0.443,0.858    c0.446,0.876,0.894,1.751,1.353,2.62c0.253,0.479,0.516,0.951,0.772,1.425c0.364,0.672,0.725,1.348,1.096,2.017    c0.306,0.55,0.623,1.093,0.936,1.642c0.334,0.583,0.662,1.171,1.002,1.751c0.342,0.584,0.695,1.162,1.043,1.742    c0.323,0.539,0.641,1.08,0.969,1.614c0.366,0.598,0.743,1.188,1.116,1.781c0.322,0.51,0.638,1.023,0.964,1.529    c0.385,0.6,0.781,1.192,1.174,1.786c0.326,0.495,0.649,0.993,0.981,1.485c0.4,0.592,0.809,1.18,1.215,1.769    c0.335,0.485,0.667,0.973,1.007,1.456c0.412,0.584,0.834,1.163,1.253,1.743c0.346,0.481,0.69,0.962,1.042,1.439    c0.421,0.57,0.85,1.135,1.277,1.7c0.362,0.48,0.721,0.961,1.087,1.437c0.427,0.555,0.864,1.105,1.298,1.656    c0.377,0.479,0.752,0.958,1.135,1.435c0.433,0.538,0.875,1.071,1.313,1.605c0.396,0.481,0.789,0.963,1.19,1.44    c0.435,0.52,0.878,1.033,1.32,1.547c0.416,0.485,0.831,0.972,1.252,1.452c0.44,0.502,0.886,0.998,1.331,1.496    c0.434,0.485,0.866,0.971,1.306,1.451c0.445,0.487,0.898,0.969,1.349,1.454c0.45,0.483,0.899,0.965,1.355,1.444    c0.451,0.473,0.907,0.94,1.363,1.409c0.329,0.339,0.653,0.682,0.986,1.019c0.125,0.126,0.252,0.247,0.376,0.372    c0.156,0.158,0.307,0.317,0.464,0.474c0.406,0.406,0.823,0.8,1.232,1.202c0.572,0.562,1.142,1.125,1.72,1.678    c0.494,0.474,0.995,0.939,1.494,1.407c0.659,0.619,1.318,1.237,1.984,1.844c0.393,0.357,0.791,0.709,1.186,1.064    c0.795,0.712,1.591,1.421,2.395,2.119c0.244,0.21,0.491,0.417,0.737,0.628c0.975,0.836,1.954,1.664,2.944,2.48    c0.05,0.041,0.101,0.081,0.152,0.124c33.109,27.204,74.098,42.076,117.349,42.224c0.219,0.001,0.435,0.002,0.654,0.002    c45.94,0,89.406-16.636,123.631-47.083l19.753,19.67C384.99,381.226,334.491,400.703,280.996,400.703z" />
+                        </g>
+                      </g>
+                      <g>
+                        <g>
+                          <path
+                            d="M238.481,498.691c-0.145-0.701-0.356-1.403-0.634-2.081c-0.278-0.669-0.623-1.314-1.024-1.914    c-0.401-0.613-0.868-1.181-1.38-1.693c-0.512-0.512-1.08-0.979-1.692-1.391c-0.601-0.401-1.247-0.735-1.925-1.013    c-0.668-0.278-1.369-0.501-2.081-0.633c-1.436-0.29-2.916-0.29-4.352,0c-0.701,0.132-1.402,0.355-2.081,0.633    c-0.668,0.278-1.313,0.624-1.914,1.013c-0.612,0.412-1.18,0.879-1.692,1.391c-0.512,0.512-0.979,1.08-1.38,1.693    c-0.401,0.6-0.746,1.245-1.024,1.914c-0.278,0.678-0.501,1.38-0.634,2.081c-0.145,0.722-0.223,1.458-0.223,2.181    c0,0.722,0.078,1.458,0.223,2.17c0.134,0.712,0.356,1.414,0.634,2.08c0.278,0.679,0.623,1.324,1.024,1.925    c0.401,0.612,0.868,1.18,1.38,1.692c0.512,0.512,1.08,0.981,1.692,1.38c0.601,0.401,1.247,0.746,1.914,1.024    c0.679,0.278,1.38,0.49,2.081,0.634c0.723,0.145,1.458,0.223,2.181,0.223s1.458-0.078,2.17-0.223    c0.712-0.145,1.414-0.356,2.081-0.634c0.679-0.278,1.324-0.623,1.925-1.024c0.612-0.4,1.18-0.868,1.692-1.38    c0.512-0.512,0.979-1.08,1.38-1.692c0.401-0.601,0.746-1.247,1.024-1.925c0.278-0.668,0.49-1.368,0.634-2.08    c0.145-0.713,0.223-1.448,0.223-2.17C238.703,500.149,238.626,499.414,238.481,498.691z" />
+                        </g>
+                      </g>
+                    </svg>
+                    <p class="mb-0 fs-12 text-dark transition">آموزشی</p>
+                  </a>
+                  <!--  -->
+                  <ul
+                    class="list-unstyled px-3 py-1 mb-0 bg-gray2 position-absolute top-0 left-166 z-10 col-12">
+                    <li class="py-25 border-bottom px-4">
+                      <a class="d-flex align-items-center justify-content-xl-between gap-3 text-secondary">
+                        <p class="mb-0 fs-12 text-dark">غذای ایرانی و سنتی</p>
+                      </a>
+                    </li>
+                    <li class="py-25 border-bottom px-4">
+                      <a class="d-flex align-items-center justify-content-xl-between gap-3 text-secondary">
+                        <p class="mb-0 fs-12 text-dark">غذای ایرانی و سنتی</p>
+                      </a>
+                    </li>
+                    <li class="py-25 border-bottom px-4">
+                      <a class="d-flex align-items-center justify-content-xl-between gap-3 text-secondary">
+                        <p class="mb-0 fs-12 text-dark">غذای ایرانی و سنتی</p>
+                      </a>
+                    </li>
+                    <li class="py-25 border-bottom px-4">
+                      <a class="d-flex align-items-center justify-content-xl-between gap-3 text-secondary">
+                        <p class="mb-0 fs-12 text-dark">غذای ایرانی و سنتی</p>
+                      </a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="py-25 border-bottom px-4 purple2-border-hover item transition position-relative">
+                  <a class="d-flex align-items-center justify-content-xl-between gap-3 text-secondary">
+                    <svg class="transition" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="#000000"
+                      height="25px" width="25px" version="1.1" id="Layer_1" viewBox="0 0 511.846 511.846"
+                      xml:space="preserve">
+                      <g>
+                        <g>
+                          <g>
+                            <path
+                              d="M468.881,0H332.348c-26.402,0-46.071,8.405-65.766,28.1c-3.336,3.337-3.336,8.73,0,12.066     c3.337,3.337,8.73,3.337,12.066,0c16.623-16.623,31.684-23.1,53.7-23.1h136.533c14.114,0,25.6,11.486,25.6,25.6V179.2     c0,22.025-6.477,37.077-23.108,53.7L217.95,486.682c-9.677,9.668-26.547,9.66-36.198,0L24.866,329.796     c-4.838-4.838-7.501-11.264-7.501-18.108c0-6.835,2.662-13.261,7.501-18.091L253.918,64.87c3.516,0.896,7.049,1.792,10.701,2.773     c34.722,9.301,62.114,18.91,82.534,27.494c-4.019,7.432-6.272,15.77-6.272,24.329c0,28.237,22.963,51.2,51.2,51.2     s51.2-22.963,51.2-51.2c0-28.237-22.963-51.2-51.2-51.2c-4.719,0-8.533,3.823-8.533,8.533s3.814,8.533,8.533,8.533     c18.825,0,34.133,15.309,34.133,34.133c0,18.825-15.309,34.133-34.133,34.133s-34.133-15.309-34.133-34.133     c0-6.144,1.681-12.143,4.779-17.365c14.78,7.074,24.021,13.039,27.674,16.845c-1.562,0.444-3.977,0.939-7.62,1.254     c-4.693,0.418-8.166,4.557-7.748,9.25c0.393,4.437,4.113,7.791,8.491,7.791c0.247,0,0.503-0.017,0.759-0.034     c5.248-0.469,21.214-1.877,24.286-13.321c8.405-31.394-114.756-66.091-139.529-72.73c-37.897-10.155-74.3-17.101-102.494-19.558     c-34.671-3.038-51.541,0.913-54.707,12.774c-1.527,5.692-5.572,20.804,63.607,48.085c4.403,1.724,9.344-0.418,11.076-4.813     c1.724-4.378-0.427-9.336-4.804-11.059c-33.425-13.184-47.275-22.844-51.729-27.392c10.539-3.089,46.524-2.193,104.465,10.982     L12.8,281.523c-8.064,8.064-12.501,18.773-12.501,30.165c0,11.401,4.437,22.118,12.501,30.174l156.885,156.885     c8.055,8.055,18.765,12.493,30.165,12.493c11.392,0,22.101-4.437,30.174-12.501l253.423-253.773     c19.703-19.695,28.1-39.364,28.1-65.766V42.667C511.548,19.14,492.407,0,468.881,0z" />
+                            <path
+                              d="M443.068,312.107c-4.079-2.398-9.301-1.024-11.682,3.046l-97.809,166.835c-7.066,12.228-22.741,16.444-34.594,9.6     l-19.063-12.348c-3.951-2.569-9.242-1.434-11.793,2.517c-2.569,3.951-1.434,9.242,2.517,11.802l19.43,12.578     c6.699,3.874,14.02,5.709,21.265,5.709c14.754,0,29.107-7.637,36.983-21.274l97.783-166.793     C448.486,319.718,447.13,314.488,443.068,312.107z" />
+                            <path
+                              d="M204.348,247.467v119.467c0,4.71,3.814,8.533,8.533,8.533s8.533-3.823,8.533-8.533V247.467     c0-4.71-3.814-8.533-8.533-8.533S204.348,242.756,204.348,247.467z" />
+                            <path
+                              d="M255.548,273.067c0,9.412,7.654,17.067,17.067,17.067s17.067-7.654,17.067-17.067c0-9.412-7.654-17.067-17.067-17.067     S255.548,263.654,255.548,273.067z" />
+                            <path
+                              d="M136.081,324.267c0,9.412,7.654,17.067,17.067,17.067c9.412,0,17.067-7.654,17.067-17.067S162.56,307.2,153.148,307.2     C143.735,307.2,136.081,314.854,136.081,324.267z" />
+                          </g>
+                        </g>
+                      </g>
+                    </svg>
+                    <p class="mb-0 fs-12 text-dark transition">کد تخفیف</p>
+                  </a>
+                </li>
+                <li class="py-25 border-bottom px-4 gray-border-hover item transition position-relative">
+                  <a class="d-flex align-items-center justify-content-xl-between gap-3 text-secondary">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-house-door-fill text-dark transition" viewBox="0 0 16 16">
+                      <path d="M6.5 14.5v-3.505c0-.245.25-.495.5-.495h2c.25 0 .5.25.5.5v3.5a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 .5-.5v-7a.5.5 0 0 0-.146-.354L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293L8.354 1.146a.5.5 0 0 0-.708 0l-6 6A.5.5 0 0 0 1.5 7.5v7a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 .5-.5Z"></path>
+                    </svg>
+                    <p class="mb-0 fs-12 text-dark transition">هتل و اقامتگاه</p>
+                  </a>
+                </li>
+                <li class="py-2 bg-gray2 d-xl-none border-bottom">
+
+                </li>
+                <li class="py-25 border-bottom px-4 d-xl-none">
+                  <a class="d-flex align-items-center justify-content-xl-between gap-3 text-warning">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-phone-vibrate" viewBox="0 0 16 16">
+                      <path d="M10 3a1 1 0 0 1 1 1v8a1 1 0 0 1-1 1H6a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h4zM6 2a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h4a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2H6z"/>
+                      <path d="M8 12a1 1 0 1 0 0-2 1 1 0 0 0 0 2zM1.599 4.058a.5.5 0 0 1 .208.676A6.967 6.967 0 0 0 1 8c0 1.18.292 2.292.807 3.266a.5.5 0 0 1-.884.468A7.968 7.968 0 0 1 0 8c0-1.347.334-2.619.923-3.734a.5.5 0 0 1 .676-.208zm12.802 0a.5.5 0 0 1 .676.208A7.967 7.967 0 0 1 16 8a7.967 7.967 0 0 1-.923 3.734.5.5 0 0 1-.884-.468A6.967 6.967 0 0 0 15 8c0-1.18-.292-2.292-.807-3.266a.5.5 0 0 1 .208-.676zM3.057 5.534a.5.5 0 0 1 .284.648A4.986 4.986 0 0 0 3 8c0 .642.12 1.255.34 1.818a.5.5 0 1 1-.93.364A5.986 5.986 0 0 1 2 8c0-.769.145-1.505.41-2.182a.5.5 0 0 1 .647-.284zm9.886 0a.5.5 0 0 1 .648.284C13.855 6.495 14 7.231 14 8c0 .769-.145 1.505-.41 2.182a.5.5 0 0 1-.93-.364C12.88 9.255 13 8.642 13 8c0-.642-.12-1.255-.34-1.818a.5.5 0 0 1 .283-.648z"/>
+                    </svg>
+                    <p class="mb-0 fs-12">۰۲۱-۴۲۰۲۴</p>
+                  </a>
+                </li>
+                <li class="py-25 border-bottom px-4 d-xl-none">
+                  <a class="d-flex align-items-center justify-content-xl-between gap-3 text-info">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-life-preserver" viewBox="0 0 16 16">
+                      <path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zm6.43-5.228a7.025 7.025 0 0 1-3.658 3.658l-1.115-2.788a4.015 4.015 0 0 0 1.985-1.985l2.788 1.115zM5.228 14.43a7.025 7.025 0 0 1-3.658-3.658l2.788-1.115a4.015 4.015 0 0 0 1.985 1.985L5.228 14.43zm9.202-9.202-2.788 1.115a4.015 4.015 0 0 0-1.985-1.985l1.115-2.788a7.025 7.025 0 0 1 3.658 3.658zm-8.087-.87a4.015 4.015 0 0 0-1.985 1.985L1.57 5.228A7.025 7.025 0 0 1 5.228 1.57l1.115 2.788zM8 11a3 3 0 1 1 0-6 3 3 0 0 1 0 6z"/>
+                    </svg>
+                    <p class="mb-0 fs-12">راهنمای خرید</p>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-12 px-0">
+            <div class="position-relative">
+              <img alt="about" src="assets/img/about_bg1.jpg" class="img-fluid w-100" data-aos="fade-down">
+              <h3 class="position-absolute bottom-0 end-0 m-4 text-white fw-bold z-10">درباره آوارد</h3>
+              <img alt="about" src="assets/img/about_header.png" class="position-absolute bottom-0 end-0 d-none d-md-block">
+            </div>
+            <div class="py-4">
+               <div class="px-4">
+                <h5 class="fw-bold text-orange mb-3" data-aos="fade-left">تاریخچه آوارد</h5>
+               <p data-aos="fade-up">
+                آوارد یکی از زیر مجموعه‌های تجاری شرکتادیب گستر عصر نوین است که تحت عنوان شرکت سهامی خاص و به مدیریت عاملی خانم نازنین دانشور فعالیت خود را از سال 1390آغاز نمود. حوزه فعالیت آوارد، ارائه خدمات و محصولات شرکت های تجاری تراز اول به صورت آنلاین، روی وب آدرس NetBarg.com است.
+               </p>
+               <div class="row g-4 align-items-center mt-lg-5">
+                 <div class="col-lg-6">
+                  <img alt="about" src="assets/img/about_bg2.png" class="img-fluid d-block mx-auto" data-aos="fade-right">
+                 </div>
+                 <div class="col-lg-6">
+                  <h5 class="fw-bold text-orange mb-3" data-aos="fade-up">هدف آوارد</h5>
+                  <p data-aos="fade-down">
+                    آوارد درصدد است تا با بکارگیری شیوه های نوین تبلیغاتی و استفاده از قدرت خرید گروهی، در حوزه خرید روشی را رواج دهد که از یک سو برای صاحبان کالاها و خدمات سودآور باشد، و از سوی دیگر برای مشتریان و خریداران صرفۀ اقتصادی بالایی داشته باشد؛ ارائه روشی که در آن خریدار و فروشنده به یک اندازه سود می برند. فارغ از تشریفات، عناوین شغلی و مراتب سازمانی، آوارد متشکل از متخصصان و کارشناسان حوزه تجارت الکترونیک، مدیریت و IT است. آوارد با تمرکز بر روی یک کالا یا سرویس به‌صورت روزانه، هم فرایند انتخاب را برای کاربران آسان می‌کند و هم با استفاده از قدرت خرید گروهی، کالای مورد‌نظر را به قیمتی عرضه می‌کند که به سختی می‌توان از خرید آن صرف‌نظر نمود.
+                  </p>
+                 </div>
+               </div>
+               </div>
+               <div class="mt-5 position-relative">
+                <img alt="about" src="assets/img/about_bg6.png" class="img-fluid w-100">
+                <div class="d-flex w-100 align-items-end justify-content-lg-between justify-content-center position-absolute top-0 px-4" data-aos="flip-down">
+                  <img alt="about" src="assets/img/about_bg5.png" class="img-fluid mb-5 pb-9 d-none d-xl-block">
+                  <img alt="about" src="assets/img/about_bg4.png" class="img-fluid mb-5">
+                  <img alt="about" src="assets/img/about_bg3.png" class="img-fluid d-none d-lg-block">
+                </div>
+               </div>
+               <div class="px-4">
+               <div class="row g-4 align-items-center mt-5 py-5">
+                 <div class="col-lg-6">
+                   <h5 class="fw-bold text-orange mb-3 mt-5 mt-md-0" data-aos="fade-right">مزایای آوارد</h5>
+                   <p data-aos="fade-down">
+                    با استفاده از این روش، همه روزه پیشنهادات متنوعی از انواع کالاها، خدمات، تفریحات و سرگرمی‌های تازه و جذاب روی سایت آوارد قرار می‌گیرد که خریداران می‌توانند با استفاده از تخفیف‌های 40 تا 99 درصدی، این پیشنهادات ویژه را خریداری کنند.
+                    </p>
+                    <p class="text-danger" data-aos="fade-down">
+                      توجه: آوارد تنها برند ثبت شده توسط شرکتادیب گستر عصر نوین است و این شرکت با هیچ سایت تخفیف دیگر و یا با عنوان سایت دیگری فعالیت ندارد.
+                    </p>
+                  </div>
+                  <div class="col-lg-6">
+                   <img alt="about" src="assets/img/about_bg7.png" class="img-fluid d-block mx-auto" data-aos="fade-right">
+                  </div>
+               </div>
+               </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- news -->
+    <section class="bg-news py-5">
+      <form class="container text-center fw-bold" data-aos="fade-right">
+        <h5 class="text-orange">اشتراک خبرنامه</h5>
+        <p class="text-white">جهت اطلاع از آخرین تخفیف های شهرستان، آدرس ایمیل خود را وارد کنید و در خبرنامه مشترک شوید</p>
+        <div class="rounded-3 bg-white d-flex align-items-center px-3 max-w-500 mx-auto">
+         <select class="bg-transparent border-0 py-3 border-start px-4">
+          <option>ارومیه</option>
+          <option>تهران</option>
+          <option>قم</option>
+          <option>تبریز</option>
+          <option>مشهد</option>
+          <option>سنندج</option>
+          <option>اردبیل</option>
+          <option>ساری</option>
+         </select>
+         <input class="bg-transparent w-100 outline-none border-0 p-3" placeholder="ایمیل خود را وارد کنید">
+         <input type="submit" class="bg-orange d-none d-sm-block rounded-3 text-white fw-bold cursor-pointer border-0 py-2 px-3" value="مشترک شوید">
+        </div>
+        <input type="submit" class="bg-orange d-block d-sm-none rounded-3 mx-auto mt-3 text-white fw-bold cursor-pointer border-0 py-2 px-3" value="مشترک شوید">
+      </form>
+    </section>
+
+    <!-- gifts -->
+    <section class="bg-gray py-5 d-none d-lg-block" data-aos="fade-up">
+      <div class="container">
+        <div class="d-flex align-items-center justify-content-center gap-5">
+          <img alt="gifts" src="assets/img/fg1.png" class="img-fluid">
+          <img alt="gifts" src="assets/img/fg2.png" class="img-fluid">
+          <img alt="gifts" src="assets/img/fg4.png" class="img-fluid">
+          <img alt="gifts" src="assets/img/fg5.png" class="img-fluid">
+          <img alt="gifts" src="assets/img/fg6.png" class="img-fluid">
+          <img alt="gifts" src="assets/img/fg7.png" class="img-fluid">
+          <img alt="gifts" src="assets/img/fg8.png" class="img-fluid">
+          <img alt="gifts" src="assets/img/fg9.png" class="img-fluid">
+          <img alt="gifts" src="assets/img/fg10.png" class="img-fluid">
+        </div>
+      </div>
+    </section>
+
+    <!-- services -->
+    <section class="d-none d-lg-block">
+      <div class="container">
+        <div class="d-flex align-items-center justify-content-between bg-gray2 text-center border">
+          <div class="px-4 py-3" data-aos="flip-right">
+            <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-geo-fill text-primary" viewBox="0 0 16 16">
+              <path fill-rule="evenodd" d="M4 4a4 4 0 1 1 4.5 3.969V13.5a.5.5 0 0 1-1 0V7.97A4 4 0 0 1 4 3.999zm2.493 8.574a.5.5 0 0 1-.411.575c-.712.118-1.28.295-1.655.493a1.319 1.319 0 0 0-.37.265.301.301 0 0 0-.057.09V14l.002.008a.147.147 0 0 0 .016.033.617.617 0 0 0 .145.15c.165.13.435.27.813.395.751.25 1.82.414 3.024.414s2.273-.163 3.024-.414c.378-.126.648-.265.813-.395a.619.619 0 0 0 .146-.15.148.148 0 0 0 .015-.033L12 14v-.004a.301.301 0 0 0-.057-.09 1.318 1.318 0 0 0-.37-.264c-.376-.198-.943-.375-1.655-.493a.5.5 0 1 1 .164-.986c.77.127 1.452.328 1.957.594C12.5 13 13 13.4 13 14c0 .426-.26.752-.544.977-.29.228-.68.413-1.116.558-.878.293-2.059.465-3.34.465-1.281 0-2.462-.172-3.34-.465-.436-.145-.826-.33-1.116-.558C3.26 14.752 3 14.426 3 14c0-.599.5-1 .961-1.243.505-.266 1.187-.467 1.957-.594a.5.5 0 0 1 .575.411z"/>
+            </svg>
+            <p class="fw-bold mb-2 mt-3">تخفیف های ویژه</p>
+            <p class="text-secondary fs-14">ارایه تخفیف‌های باورنکردنی و دوره‌ای در روز‌های خاص</p>
+          </div>
+          <div class="px-4 py-3" data-aos="flip-left">
+            <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-credit-card-2-front text-primary" viewBox="0 0 16 16">
+              <path d="M14 3a1 1 0 0 1 1 1v8a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h12zM2 2a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2H2z"/>
+              <path d="M2 5.5a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1-.5-.5v-1zm0 3a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5zm0 2a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 0 1h-1a.5.5 0 0 1-.5-.5zm3 0a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 0 1h-1a.5.5 0 0 1-.5-.5zm3 0a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 0 1h-1a.5.5 0 0 1-.5-.5zm3 0a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 0 1h-1a.5.5 0 0 1-.5-.5z"/>
+            </svg>
+            <p class="fw-bold mb-2 mt-3">پرداخت آنلاین</p>
+            <p class="text-secondary fs-14">خرید آوارد با پرداخت آنلاین در هر ساعتی از شبانه روز</p>
+          </div>
+          <div class="px-4 py-3" data-aos="flip-right">
+            <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-award text-primary" viewBox="0 0 16 16">
+              <path d="M9.669.864 8 0 6.331.864l-1.858.282-.842 1.68-1.337 1.32L2.6 6l-.306 1.854 1.337 1.32.842 1.68 1.858.282L8 12l1.669-.864 1.858-.282.842-1.68 1.337-1.32L13.4 6l.306-1.854-1.337-1.32-.842-1.68L9.669.864zm1.196 1.193.684 1.365 1.086 1.072L12.387 6l.248 1.506-1.086 1.072-.684 1.365-1.51.229L8 10.874l-1.355-.702-1.51-.229-.684-1.365-1.086-1.072L3.614 6l-.25-1.506 1.087-1.072.684-1.365 1.51-.229L8 1.126l1.356.702 1.509.229z"/>
+              <path d="M4 11.794V16l4-1 4 1v-4.206l-2.018.306L8 13.126 6.018 12.1 4 11.794z"/>
+            </svg>
+            <p class="fw-bold mb-2 mt-3">تضمین کیفیت خدمات</p>
+            <p class="text-secondary fs-14">بررسی کیفیت خدمات و کالاها توسط کارشناسان مربوطه</p>
+          </div>
+          <div class="px-4 py-3" data-aos="flip-left">
+            <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-currency-exchange text-primary" viewBox="0 0 16 16">
+              <path d="M0 5a5.002 5.002 0 0 0 4.027 4.905 6.46 6.46 0 0 1 .544-2.073C3.695 7.536 3.132 6.864 3 5.91h-.5v-.426h.466V5.05c0-.046 0-.093.004-.135H2.5v-.427h.511C3.236 3.24 4.213 2.5 5.681 2.5c.316 0 .59.031.819.085v.733a3.46 3.46 0 0 0-.815-.082c-.919 0-1.538.466-1.734 1.252h1.917v.427h-1.98c-.003.046-.003.097-.003.147v.422h1.983v.427H3.93c.118.602.468 1.03 1.005 1.229a6.5 6.5 0 0 1 4.97-3.113A5.002 5.002 0 0 0 0 5zm16 5.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0zm-7.75 1.322c.069.835.746 1.485 1.964 1.562V14h.54v-.62c1.259-.086 1.996-.74 1.996-1.69 0-.865-.563-1.31-1.57-1.54l-.426-.1V8.374c.54.06.884.347.966.745h.948c-.07-.804-.779-1.433-1.914-1.502V7h-.54v.629c-1.076.103-1.808.732-1.808 1.622 0 .787.544 1.288 1.45 1.493l.358.085v1.78c-.554-.08-.92-.376-1.003-.787H8.25zm1.96-1.895c-.532-.12-.82-.364-.82-.732 0-.41.311-.719.824-.809v1.54h-.005zm.622 1.044c.645.145.943.38.943.796 0 .474-.37.8-1.02.86v-1.674l.077.018z"/>
+            </svg>
+            <p class="fw-bold mb-2 mt-3">خدمات تجارت امن</p>
+            <p class="text-secondary fs-14">حفظ حریم خصوصی کاربران در بستر تجارت الکترونیک ایمن</p>
+          </div>
+          <div class="px-4 py-3" data-aos="flip-right">
+            <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-headset text-primary" viewBox="0 0 16 16">
+              <path d="M8 1a5 5 0 0 0-5 5v1h1a1 1 0 0 1 1 1v3a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V6a6 6 0 1 1 12 0v6a2.5 2.5 0 0 1-2.5 2.5H9.366a1 1 0 0 1-.866.5h-1a1 1 0 1 1 0-2h1a1 1 0 0 1 .866.5H11.5A1.5 1.5 0 0 0 13 12h-1a1 1 0 0 1-1-1V8a1 1 0 0 1 1-1h1V6a5 5 0 0 0-5-5z"/>
+            </svg>
+            <p class="fw-bold mb-2 mt-3">پشتیبانی کامل در ساعات اداری ۱۰ تا ۱۸</p>
+            <p class="text-secondary fs-14">در تمامی مراحل سفارش پشتیبانی آوارد کنار شماست</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- footer -->
+
+  <footer>
+    <div class="container">
+     <div class="row g-4 py-5">
+       <div class="col-lg-8 order-1 order-lg-0">
+        <div class="row g-4">
+          <div class="col-xl-3 text-center text-sm-end col-sm-6">
+            <h6 class="fw-bold">آوارد</h6>
+            <ul class="list-unstyled p-0 mb-0 mt-3">
+              <li class="border-end pe-2 fs-14 mb-3"><a class="d-block text-muted">درباره آوارد</a></li>
+              <li class="border-end pe-2 fs-14 mb-3"><a class="d-block text-muted">قوانین و مقررات</a></li>
+              <li class="border-end pe-2 fs-14 mb-3"><a class="d-block text-muted">حریم خصوصی</a></li>
+              <li class="border-end pe-2 fs-14"><a class="d-block text-muted">آوارد در اخبار</a></li>
+            </ul>
+          </div>
+          <div class="col-xl-3 text-center text-sm-end col-sm-6">
+            <h6 class="fw-bold">ارتباط با ما</h6>
+            <ul class="list-unstyled p-0 mb-0 mt-3">
+              <li class="border-end pe-2 fs-14 mb-3"><a class="d-block text-muted">تماس با ما</a></li>
+              <li class="border-end pe-2 fs-14 mb-3"><a class="d-block text-muted">همکاری با ما</a></li>
+              <li class="border-end pe-2 fs-14 mb-3"><a class="d-block text-muted">دریافت نمایندگی</a></li>
+              <li class="border-end pe-2 fs-14"><a class="d-block text-muted">آوارد برای کسب و کار شما</a></li>
+            </ul>
+          </div>
+          <div class="col-xl-3 text-center text-sm-end col-sm-6">
+            <h6 class="fw-bold">بیشتر بدانید</h6>
+            <ul class="list-unstyled p-0 mb-0 mt-3">
+              <li class="border-end pe-2 fs-14 mb-3"><a class="d-block text-muted">آوارد سازمانی</a></li>
+              <li class="border-end pe-2 fs-14 mb-3"><a class="d-block text-muted">راهنمای خرید</a></li>
+              <li class="border-end pe-2 fs-14 mb-3"><a class="d-block text-muted">راهنمای پرداخت</a></li>
+              <li class="border-end pe-2 fs-14 mb-3"><a class="d-block text-muted">آوارد چگونه کار می‌کند</a></li>
+              <li class="border-end pe-2 fs-14"><a class="d-block text-muted">سوالات متداول</a></li>
+            </ul>
+          </div>
+          <div class="col-xl-3 text-center text-sm-end col-sm-6">
+            <h6 class="fw-bold">سایر خدمات</h6>
+            <ul class="list-unstyled p-0 mb-0 mt-3">
+              <li class="border-end pe-2 fs-14 mb-3"><a class="d-block text-muted">آوارد های در جریان</a></li>
+              <li class="border-end pe-2 fs-14 mb-3"><a class="d-block text-muted">آوارد های مناطق</a></li>
+              <li class="border-end pe-2 fs-14"><a class="d-block text-muted">آوارد های کسب و کار</a></li>
+            </ul>
+          </div>
+        </div>
+       </div>
+       <div class="col-lg-4 order-0 order-lg-1">
+          <div>
+            <div class="d-flex align-items-center gap-3">
+              <img alt="android" src="assets/img/dl-android.png" class="img-fluid">
+              <h6 class="fw-bold mb-0">دانلود برای اندروید</h6>
+            </div>
+            <div class="d-flex align-items-center gap-2 flex-wrap mt-3">
+              <a class="d-flex align-items-center justify-content-center px-3 py-2 gap-2 rounded-3 bg-secondary flex-grow-1">
+               <img alt="app" src="assets/img/dl-gplayer.png" class="img-fluid">
+                <p class="mb-0 text-white fs-14">دانلود از گوگل پلی</p>
+              </a>
+              <a class="d-flex align-items-center justify-content-center px-3 py-2 gap-2 rounded-3 bg-secondary flex-grow-1">
+               <img alt="app" src="assets/img/dl-bazar.png" class="img-fluid">
+                <p class="mb-0 text-white fs-14">دانلود از بازار</p>
+              </a>
+              <a class="d-flex align-items-center justify-content-center px-3 py-2 gap-2 rounded-3 bg-secondary flex-grow-1">
+               <img alt="app" src="assets/img/dl-myket.png" class="img-fluid">
+                <p class="mb-0 text-white fs-14">دانلود از مایکت</p>
+              </a>
+            </div>
+            <div class="d-flex align-items-center gap-3 mt-3">
+              <img alt="android" src="assets/img/dl-ios.png" class="img-fluid">
+              <h6 class="fw-bold mb-0">دانلود برای ios</h6>
+            </div>
+            <div class="d-flex align-items-center flex-wrap gap-2 mt-3">
+              <a class="d-flex align-items-center justify-content-center px-3 py-2 gap-2 rounded-3 bg-secondary flex-grow-1">
+               <img alt="app" src="assets/img/dl-ios-white.png" class="img-fluid">
+                <p class="mb-0 text-white fs-14">دانلود مستقیم</p>
+              </a>
+              <a class="d-flex align-items-center justify-content-center px-3 py-2 gap-2 rounded-3 bg-secondary flex-grow-1">
+               <img alt="app" src="assets/img/dl-sibapp.png" class="img-fluid">
+                <p class="mb-0 text-white fs-14">دانلود از سیپ اپ</p>
+              </a>
+            </div>
+          </div>
+       </div>
+     </div>
+    </div>
+    <div class="bg-gray2 py-4">
+     <div class="container">
+      <div class="d-flex flex-column flex-lg-row align-items-center justify-content-between">
+        <div class="d-flex align-items-center flex-column flex-sm-row gap-4 mb-4 mb-lg-0">
+          <div class="border-start ps-4">
+           <p class="fw-bold mb-2 fs-14">پشتیبانی : <span class="text-orange"> ۴۲۰۲۴- ۰۲۱</span></p>
+           <p class="fw-bold mb-0 fs-14">شرکت : <span class="text-orange"> ۸۸۵۷۵۱۶۰- ۰۲۱</span></p>
+          </div>
+          <div class="d-flex align-items-center gap-4 pe-4">
+            <a class="d-block text-muted">
+              <svg xmlns="http://www.w3.org/2000/svg" width="19" height="19" fill="currentColor" class="bi bi-telegram" viewBox="0 0 16 16">
+                <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8.287 5.906c-.778.324-2.334.994-4.666 2.01-.378.15-.577.298-.595.442-.03.243.275.339.69.47l.175.055c.408.133.958.288 1.243.294.26.006.549-.1.868-.32 2.179-1.471 3.304-2.214 3.374-2.23.05-.012.12-.026.166.016.047.041.042.12.037.141-.03.129-1.227 1.241-1.846 1.817-.193.18-.33.307-.358.336a8.154 8.154 0 0 1-.188.186c-.38.366-.664.64.015 1.088.327.216.589.393.85.571.284.194.568.387.936.629.093.06.183.125.27.187.331.236.63.448.997.414.214-.02.435-.22.547-.82.265-1.417.786-4.486.906-5.751a1.426 1.426 0 0 0-.013-.315.337.337 0 0 0-.114-.217.526.526 0 0 0-.31-.093c-.3.005-.763.166-2.984 1.09z"/>
+              </svg>
+            </a>
+            <a class="d-block text-muted">
+              <svg xmlns="http://www.w3.org/2000/svg" width="19" height="19" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
+                <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"/>
+              </svg>
+            </a>
+            <a class="d-block text-muted">
+              <svg xmlns="http://www.w3.org/2000/svg" width="19" height="19" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
+                <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z"/>
+              </svg>
+            </a>
+            <a class="d-block text-muted">
+              <svg xmlns="http://www.w3.org/2000/svg" width="19" height="19" fill="currentColor" class="bi bi-linkedin" viewBox="0 0 16 16">
+                <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z"/>
+              </svg>
+            </a>
+            <a class="d-block text-muted">
+              <svg xmlns="http://www.w3.org/2000/svg" width="19" height="19" fill="currentColor" class="bi bi-twitter" viewBox="0 0 16 16">
+                <path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z"/>
+              </svg>
+            </a>
+            <a class="d-block text-muted">
+              <svg xmlns="http://www.w3.org/2000/svg" width="19" height="19" fill="currentColor" class="bi bi-whatsapp" viewBox="0 0 16 16">
+                <path d="M13.601 2.326A7.854 7.854 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.933 7.933 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.898 7.898 0 0 0 13.6 2.326zM7.994 14.521a6.573 6.573 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.557 6.557 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592zm3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.729.729 0 0 0-.529.247c-.182.198-.691.677-.691 1.654 0 .977.71 1.916.81 2.049.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232z"/>
+              </svg>
+            </a>
+          </div>
+        </div>
+        <div class="d-flex align-items-center gap-4">
+          <a class="d-block">
+            <img alt="namad" src="assets/img/logo.png" class="img-fluid">
+          </a>
+          <a class="d-block">
+            <img alt="namad" src="assets/img/logo1.png" class="img-fluid">
+          </a>
+          <a class="d-block">
+            <img alt="namad" src="assets/img/namad.png" class="img-fluid">
+          </a>
+        </div>
+      </div>
+     </div>
+    </div>
+    <div class="bg-gray3 py-4">
+     <div class="container fs-14 text-center text-sm-end text-secondary">
+        <p class="mb-0 mb-sm-3">کلیه حقوق این وب سایت متعلق به شرکت <a href="https://support.adib-it.com">ادیب گستر عصر نوین</a> است.</p>
+        <p class="text-justify mb-4 d-none d-sm-block">
+          آوارد اولین و بزرگترین سایت تخفیف گروهی در ایران است که به صورت روزانه پیشنهاداتی متنوع و باورنکردنی را با ۴۰ تا ۹۹ درصد تخفیف از بهترین مکان‌های شهر شامل رستوران‌ها، مراکز ورزشی، تفریحی، رفاهی، فرهنگی، هنری، بهداشتی، آرایشی و غیره را به مشتریان خود ارائه می‌دهد. «تخفیف های هیجان‌انگیز»، «خرید ارزان‌تر و بدون واسطه»، «صرفه جویی در زمان و هزینه»، «تضمین کیفیت خدمات» و «پشتیبانی کامل در تمام مراحل» برگ برنده آوارد برای کاربران خود محسوب می‌شوند. آوارد با بکارگیری شیوه های نوین تبلیغاتی و تمرکز روزانه روی کالا ها و سرویس های خدماتی و رفاهی، فرآیند انتخاب را برای اعضای خود آسان کرده و همچنین با استفاده از قدرت خرید گروهی پیشنهادات مورد نظر را به قیمتی عرضه می‌کند که به سختی می‌توان از خرید آن صرف نظر کرد. ایجاد بستر مناسب تحت وب از طریق وب‌سایت آوارد و همچنین ارائه خدمات روی انواع گوشی‌ها و تبلت‌ها با استفاده از اپلیکیشن موبایل آوارد این امکان را به خانواده میلیونی آوارد می‌دهد تا در اسرع وقت و به ساده‌ترین شکل ممکن بتوانند به کلیه پیشنهادهای آوارد دسترسی داشته و از امکانات ارائه‌شده آن بهره‌مند شوند. پیشنهادات آوارد به طور کلی به دو دسته آنی و غیر آنی تقسیم می‌گردند که «آوارد های آنی» بلافاصله پس از خرید تا لحظه پایان زمان استفاده آن‌ها، دارای اعتبار بوده و قابل استفاده می‌باشند. همچنین «آوارد های غیر آنی» نیز پیشنهاداتی هستند که پس از خرید آن‌ها، کاربران می‌بایست به منظور استفاده از آوارد های خود، تا اتمام مهلت خرید آن پیشنهاد بر روی سایت آوارد، صبر نمایند. برای استفاده از آوارد تنها کافی‌ست پیشنهاد مورد نظر خود را خریداری نمایید و با ارائه کد های اختصاصی خود به فروشنده که از طریق ایمیل، حساب کاربری‌ و یا پیامک در دسترس شما قرار می‌گیرند، از پیشنهاد و قیمت باورنکردنی نت ‌برگ لذت برده و لحظات خوش و زیبایی را تجربه کنید. لازم به ذکر است آوارد هم‌اکنون در اکثر شهرهای بزرگ ایران مانند تهران، کرج، مشهد، اصفهان، شیراز، ارومیه و غیره مشغول به فعالیت و ارائه خدمات روزانه می‌باشد.
+        </p>
+        <a class="d-sm-block d-none">
+          <img alt="logo" src="assets/img/netbarg.png" class="img-fluid w-136">
+        </a>
+     </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/jquery-3.7.1.min.js"></script>
+  <script src="assets/js/fancybox.umd.js"></script>
+  <script src="assets/js/aos.js"></script>
+  <!-- Swiper JS -->
+  <script src="assets/js/swiper-bundle.min.js"></script>
+  <script src="assets/js/scripts.js"></script>
+  <script src="assets/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
