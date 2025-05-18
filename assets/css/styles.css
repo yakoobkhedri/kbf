@@ -23,7 +23,13 @@ body {
 .border-gray{
     border: 1px solid #e0e0e2;
 }
-
+.border-gray2{
+    border: 1px solid #c0c2c5;
+}
+/* background */
+.bg-red{
+    background-color: #e82c2b;
+}
 /* max width */
 
 .max-w-400{
@@ -36,7 +42,10 @@ body {
 .p-20{
     padding: 20px;
 }
-
+/* margin */
+.mt-32{
+    margin-top: 32px;
+}
 /* rounded */
 
 .rounded-8{
@@ -47,4 +56,88 @@ body {
 
 .w-101{
     width: 101px;
+}
+
+/* height */
+
+.h-48{
+    height: 48px;
+}
+.h-100vh{
+    height: 100vh;
+}
+
+/* font size */
+
+.fs-14{
+    font-size: 14px;
+}
+
+/* global */
+
+.cursor{
+    cursor: pointer;
+}
+
+.transition{
+    transition: all .4s;
+}
+.outline-none{
+    outline: none;
+}
+.input1:focus{
+    border: 1px solid rgb(0, 183, 255);
+}
+
+/* hover */
+
+.btnHover:hover{
+  animation: jello-horizontal 0.9s both;
+}
+@keyframes jello-horizontal {
+  0% {
+    transform: scale3d(1, 1, 1);
+  }
+
+  30% {
+    transform: scale3d(1.25, 0.75, 1);
+  }
+
+  40% {
+    transform: scale3d(0.75, 1.25, 1);
+  }
+
+  50% {
+    transform: scale3d(1.15, 0.85, 1);
+  }
+
+  65% {
+    transform: scale3d(0.95, 1.05, 1);
+  }
+
+  75% {
+    transform: scale3d(1.05, 0.95, 1);
+  }
+
+  100% {
+    transform: scale3d(1, 1, 1);
+  }
+}
+
+/* responsive */
+
+@media screen and (max-width: 992px) {
+    .input1{
+        background-color: #f0f0f1;
+        border: 2px solid transparent;
+    }
+    .input1:focus{
+    border: none;
+    border-bottom: 2px solid rgb(0, 183, 255);
+}
+}
+@media screen and (max-width: 576px) {
+   .h-sm-auto{
+    height: auto;
+   }
 }
