@@ -74,7 +74,6 @@ body {
 .rounded-8{
     border-radius: 8px;
 }
-
 /* width */
 
 .w-101{
@@ -111,7 +110,9 @@ body {
     font-size: 18px;
 }
 /* global */
-
+.text-justify{
+    text-align: justify;
+}
 .cursor{
     cursor: pointer;
 }
@@ -130,6 +131,11 @@ body {
    background-color: #e82c2b;
    height: 6px;
    border-radius: 11px;
+}
+.carousel-control-next.disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+  pointer-events: none;
 }
 /* hover */
 
@@ -181,5 +187,24 @@ body {
 @media screen and (max-width: 576px) {
    .h-sm-auto{
     height: auto;
+   }
+   .border-sm-0{
+    border: none;
+   }
+   .shadow-sm-0{
+    box-shadow: none !important;
+   }
+   .position-sm-fixed{
+    position: fixed !important;
+   }
+   .mb-sm-20{
+    margin-bottom: 20px;
+   }
+   .mb-sm-33{
+    margin-bottom: 33px;
+   }
+   .bg-sm-red{
+    background-color: #93080e;
+    background-image: none;
    }
 }
