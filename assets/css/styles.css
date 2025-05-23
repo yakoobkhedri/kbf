@@ -107,10 +107,15 @@ body {
 .w-101{
     width: 101px;
 }
-
+.w-260{
+    width: 260px;
+}
 /* height */
 .h-20{
     height: 20px;
+}
+.h-34{
+    height: 34vh;
 }
 .h-44{
     height: 44px;
