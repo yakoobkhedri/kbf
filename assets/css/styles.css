@@ -220,6 +220,12 @@ a{
     transform: scale3d(1, 1, 1);
   }
 }
+.offcanvas ul li a,footer ul li a,.social a{
+  transition: all .4s;
+}
+.offcanvas ul li:hover a,footer ul li:hover a,.social a:hover{
+    color: #e82c2b !important;
+}
 /* header */
 header nav ul > li > a {
   position: relative;
@@ -263,6 +269,9 @@ header nav ul > li > a:hover::after, header nav ul > li > a.active::after {
    .h-sm-auto{
     height: auto;
    }
+   .fs-sm-16{
+    font-size: 16px;
+   }
    .border-sm-0{
     border: none;
    }
@@ -281,6 +290,9 @@ header nav ul > li > a:hover::after, header nav ul > li > a.active::after {
    .bg-sm-red{
     background-color: #93080e;
     background-image: none;
+   }
+   .h-sm-240{
+    height: 240px;
    }
    .w-sm-59{
     width: 59px;
