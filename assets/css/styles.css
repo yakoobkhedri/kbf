@@ -149,6 +149,9 @@ body {
 .h-100vh{
     height: 100vh;
 }
+.h-230{
+    height: 230px;
+}
 .h-482{
     height: 482px;
 }
@@ -185,6 +188,9 @@ body {
 a{
     cursor: pointer;
     transition: all .4s;
+}
+.object-cover{
+    object-fit: cover;
 }
 .text-justify{
     text-align: justify;
@@ -324,6 +330,11 @@ header nav ul > li > a:hover::after, header nav ul > li > a.active::after {
     border: none;
     border-bottom: 2px solid rgb(0, 183, 255);
 }
+}
+@media screen and (max-width: 768px) {
+  .h-md-auto{
+    height: auto;
+   }
 }
 @media screen and (max-width: 576px) {
    .h-sm-auto{
