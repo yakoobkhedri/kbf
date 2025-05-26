@@ -35,6 +35,9 @@ body {
     top: -6px;
 }
 /* bottom */
+.-bottom-50{
+    bottom: -50px;
+}
 .bottom-15{
     bottom: 15px;
 }
@@ -121,6 +124,9 @@ body {
 .w-101{
     width: 101px;
 }
+.w-117{
+    width: 117px;
+}
 .w-260{
     width: 260px;
 }
@@ -130,6 +136,9 @@ body {
 }
 .h-34{
     height: 34vh;
+}
+.h-38{
+    height: 38px;
 }
 .h-44{
     height: 44px;
@@ -151,6 +160,9 @@ body {
 }
 .h-230{
     height: 230px;
+}
+.h-400{
+    height: 400px;
 }
 .h-482{
     height: 482px;
