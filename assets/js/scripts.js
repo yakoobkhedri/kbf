@@ -15,3 +15,15 @@ decrement.forEach((item) => {
     }
   })
 });
+
+// accardion
+
+let filterBtn=Array.from(document.getElementsByClassName('filterBtn'));
+let filterContent=Array.from(document.getElementsByClassName('filterContent'));
+
+filterBtn.forEach((item)=>{
+    item.addEventListener('click',function () {
+        item.nextElementSibling.classList.toggle('active');
+        item.querySelector('svg').classList.toggle('active');
+    })
+})

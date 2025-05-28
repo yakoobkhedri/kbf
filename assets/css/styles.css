@@ -331,6 +331,25 @@ header nav ul > li > a:hover::after, header nav ul > li > a.active::after {
   box-shadow: 0 0 19px -1px rgba(211, 211, 211, 0.637);
   z-index: 10;
 }
+/* filter accordion */
+.filterBtn svg {
+  transition: all .4s;
+}
+.filterBtn svg.active {
+  transform: rotate(180deg);
+}
+.filterContent {
+  max-height: 0;
+  transition: all .4s;
+  overflow: hidden;
+  padding-top: 0;
+  padding-bottom: 0;
+}
+.filterContent.active {
+  max-height: 1000px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+}
 /* responsive */
 
 @media screen and (max-width: 992px) {
