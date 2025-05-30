@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="assets/css/bootstrap.min.css" rel="stylesheet">
   <link rel='stylesheet' type='text/css' media='screen' href='assets/css/styles.css'>
+  <link rel='stylesheet' href='assets/css/swiper.min.css'>
   <title>لیست محصولات</title>
 </head>
 
@@ -210,6 +211,138 @@
           </a>
         </li>
       </ul>
+    </div>
+  </div>
+
+  <!-- sort modal -->
+  <div class="offcanvas offcanvas-bottom h-100" tabindex="-1" id="offcanvasSortBottom"
+    aria-labelledby="offcanvasBottomLabel">
+    <div class="offcanvas-header">
+      <h6 class="fw-bold fs-14 mb-0">مرتب سازی بر اساس</h6>
+      <button type="button" class="btn-close btn-sm me-auto" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body small">
+      <ul class="list-unstyled m-0 p-0 flex-column d-flex">
+        <li class="d-flex align-items-center justify-content-between gap-2 border-bottom cursor py-3 text-secondary">
+          <p class="mb-0">سفارشات من</p>
+          <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" class="bi bi-check"
+            viewBox="0 0 16 16">
+            <path
+              d="M10.97 4.97a.75.75 0 0 1 1.07 1.05l-3.99 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425z" />
+          </svg>
+        </li>
+        <li class="d-flex align-items-center justify-content-between gap-2 border-bottom cursor py-3 text-secondary">
+          <p class="mb-0">جدیدترین</p>
+          <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" class="bi bi-check"
+            viewBox="0 0 16 16">
+            <path
+              d="M10.97 4.97a.75.75 0 0 1 1.07 1.05l-3.99 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425z" />
+          </svg>
+        </li>
+        <li class="d-flex align-items-center justify-content-between gap-2 border-bottom cursor py-3 text-secondary">
+          <p class="mb-0">پرفروش ترین</p>
+          <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" class="bi bi-check"
+            viewBox="0 0 16 16">
+            <path
+              d="M10.97 4.97a.75.75 0 0 1 1.07 1.05l-3.99 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425z" />
+          </svg>
+        </li>
+        <li class="d-flex align-items-center justify-content-between gap-2 border-bottom cursor py-3 text-secondary">
+          <p class="mb-0">ارزان ترین</p>
+          <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" class="bi bi-check"
+            viewBox="0 0 16 16">
+            <path
+              d="M10.97 4.97a.75.75 0 0 1 1.07 1.05l-3.99 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425z" />
+          </svg>
+        </li>
+        <li class="d-flex align-items-center justify-content-between gap-2 border-bottom cursor py-3 text-secondary">
+          <p class="mb-0">گران ترین</p>
+          <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" class="bi bi-check"
+            viewBox="0 0 16 16">
+            <path
+              d="M10.97 4.97a.75.75 0 0 1 1.07 1.05l-3.99 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425z" />
+          </svg>
+        </li>
+        <li class="d-flex align-items-center justify-content-between gap-2 border-bottom cursor py-3 text-secondary">
+          <p class="mb-0">سریع ترین ارسال</p>
+          <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" class="bi bi-check"
+            viewBox="0 0 16 16">
+            <path
+              d="M10.97 4.97a.75.75 0 0 1 1.07 1.05l-3.99 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425z" />
+          </svg>
+        </li>
+        <li class="d-flex align-items-center justify-content-between gap-2 border-bottom cursor py-3 text-secondary">
+          <p class="mb-0">پیشنهاد خریداران</p>
+          <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" class="bi bi-check"
+            viewBox="0 0 16 16">
+            <path
+              d="M10.97 4.97a.75.75 0 0 1 1.07 1.05l-3.99 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425z" />
+          </svg>
+        </li>
+        <li class="d-flex align-items-center justify-content-between gap-2 border-bottom cursor py-3 text-secondary">
+          <p class="mb-0">منتخب</p>
+          <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" class="bi bi-check"
+            viewBox="0 0 16 16">
+            <path
+              d="M10.97 4.97a.75.75 0 0 1 1.07 1.05l-3.99 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425z" />
+          </svg>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- price modal -->
+  <div class="offcanvas offcanvas-bottom h-100" tabindex="-1" id="offcanvasPriceBottom"
+    aria-labelledby="offcanvasBottomLabel">
+    <div class="offcanvas-header">
+      <h6 class="fw-bold fs-14 mb-0">محدوده قیمت</h6>
+      <button type="button" class="btn-close btn-sm me-auto" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body small">
+      <div>
+        <div class="price-slider-container" id="slider2">
+          <div class="price-input-container">
+            <div class="price-input">
+              <div class="d-flex align-items-center gap-3 mb-4 price-field">
+                <p class="mb-0 fs-14 fw-bold text-secondary">از</p>
+                <input value="1000" type="number" class="border-0 border-bottom outline-none w-100 min-input">
+                <p class="mb-0 fs-14 fw-bold text-secondary">تومان</p>
+              </div>
+              <div class="d-flex align-items-center gap-3 mb-4 price-field">
+                <p class="mb-0 fs-14 fw-bold text-secondary">تا</p>
+                <input value="5000" type="number" class="border-0 border-bottom outline-none w-100 max-input">
+                <p class="mb-0 fs-14 fw-bold text-secondary">تومان</p>
+              </div>
+            </div>
+          </div>
+          <!-- Slider -->
+          <div class="range-input my-3">
+            <input type="range" class="min-range" min="0" max="10000" value="1000" step="1">
+            <input type="range" class="max-range" min="0" max="10000" value="5000" step="1">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- price modal -->
+  <div class="offcanvas offcanvas-bottom h-100" tabindex="-1" id="offcanvasTypeBottom"
+    aria-labelledby="offcanvasBottomLabel">
+    <div class="offcanvas-header">
+      <h6 class="fw-bold fs-14 mb-0">نوع کالا</h6>
+      <button type="button" class="btn-close btn-sm me-auto" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body small">
+      <div>
+        <label class="cursor-pointer cursor w-100 mb-4">
+          <input type="checkbox" class="form-check-input cursor-pointer ms-1">
+          دیجیتال
+        </label>
+        <label class="cursor-pointer cursor w-100 mb-4">
+          <input type="checkbox" class="form-check-input cursor-pointer ms-1">
+          استاندارد
+        </label>
+      </div>
     </div>
   </div>
 
@@ -428,11 +561,19 @@
 
     <section>
       <div class="py-5 titleBg">
-        <h2 class="fs-32 text-success text-center fw-bold my-4">هدفون، هدست و هندزفری</h2>
+        <h2 class="fs-32 text-red py-3 text-center fw-bold bg-white">هدفون، هدست و هندزفری</h2>
       </div>
       <div class="container mt-5">
         <div class="row g-4">
           <div id="filtersidebar" class="col-lg-3">
+            <div class="d-flex d-lg-none align-items-center justify-content-between gap-3 py-4">
+              <h6 class="fw-bold fs-14 mb-0">فیلترها</h6>
+              <svg id="closeFilter" xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="currentColor" class="bi bi-x cursor"
+                viewBox="0 0 16 16">
+                <path
+                  d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708" />
+              </svg>
+            </div>
             <div>
               <div class="border-bottom">
                 <div class="d-flex align-items-center justify-content-between gap-3 cursor filterBtn py-3">
@@ -445,24 +586,26 @@
                   </svg>
                 </div>
                 <div class="px-2 filterContent">
-                  <div class="price-input-container">
-                    <div class="price-input">
-                      <div class="d-flex align-items-center gap-3 mb-4 price-field">
-                        <p class="mb-0 fs-14 fw-bold text-secondary">از</p>
-                        <input value="2500" type="number" class="border-0 border-bottom outline-none w-100 min-input">
-                        <p class="mb-0 fs-14 fw-bold text-secondary">تومان</p>
-                      </div>
-                      <div class="d-flex align-items-center gap-3 mb-4 price-field">
-                        <p class="mb-0 fs-14 fw-bold text-secondary">تا</p>
-                        <input value="8500" type="number" class="border-0 border-bottom outline-none w-100 max-input">
-                        <p class="mb-0 fs-14 fw-bold text-secondary">تومان</p>
+                  <div class="price-slider-container" id="slider1">
+                    <div class="price-input-container">
+                      <div class="price-input">
+                        <div class="d-flex align-items-center gap-3 mb-4 price-field">
+                          <p class="mb-0 fs-14 fw-bold text-secondary">از</p>
+                          <input value="2500" type="number" class="border-0 border-bottom outline-none w-100 min-input">
+                          <p class="mb-0 fs-14 fw-bold text-secondary">تومان</p>
+                        </div>
+                        <div class="d-flex align-items-center gap-3 mb-4 price-field">
+                          <p class="mb-0 fs-14 fw-bold text-secondary">تا</p>
+                          <input value="8500" type="number" class="border-0 border-bottom outline-none w-100 max-input">
+                          <p class="mb-0 fs-14 fw-bold text-secondary">تومان</p>
+                        </div>
                       </div>
                     </div>
-                  </div>
-                  <!-- Slider -->
-                  <div class="range-input my-3">
-                    <input type="range" class="min-range" min="0" max="10000" value="2500" step="1">
-                    <input type="range" class="max-range" min="0" max="10000" value="8500" step="1">
+                    <!-- Slider -->
+                    <div class="range-input my-3">
+                      <input type="range" class="min-range" min="0" max="10000" value="2500" step="1">
+                      <input type="range" class="max-range" min="0" max="10000" value="8500" step="1">
+                    </div>
                   </div>
                 </div>
               </div>
@@ -558,15 +701,86 @@
             </div>
           </div>
           <div class="col-lg-9">
-            <div class="flex-wrap d-flex align-items-center justify-content-between gap-4 my-4 container">
-              <div class="d-md-flex d-none align-items-center gap-4 flex-wrap">
+            <div class="d-lg-none">
+              <div class="swiper filterswiper py-3">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <div data-bs-toggle="offcanvas" data-bs-target="#offcanvasSortBottom"
+                      aria-controls="offcanvasBottom"
+                      class="rounded-pill cursor text-secondary fs-10 py-2 px-3 border d-flex align-items-center justify-content-center gap-2">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                        class="bi bi-sort-down flex-shrink-0" viewBox="0 0 16 16">
+                        <path
+                          d="M3.5 2.5a.5.5 0 0 0-1 0v8.793l-1.146-1.147a.5.5 0 0 0-.708.708l2 1.999.007.007a.497.497 0 0 0 .7-.006l2-2a.5.5 0 0 0-.707-.708L3.5 11.293zm3.5 1a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7a.5.5 0 0 1-.5-.5M7.5 6a.5.5 0 0 0 0 1h5a.5.5 0 0 0 0-1zm0 3a.5.5 0 0 0 0 1h3a.5.5 0 0 0 0-1zm0 3a.5.5 0 0 0 0 1h1a.5.5 0 0 0 0-1z" />
+                      </svg>
+                      <p class="mb-0 text-nowrap">پربازدیدترین</p>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div id="openFilter"
+                      class="rounded-pill cursor text-secondary fs-10 py-2 px-3 border d-flex align-items-center justify-content-center gap-2">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                        class="bi bi-sliders flex-shrink-0" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd"
+                          d="M11.5 2a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3M9.05 3a2.5 2.5 0 0 1 4.9 0H16v1h-2.05a2.5 2.5 0 0 1-4.9 0H0V3zM4.5 7a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3M2.05 8a2.5 2.5 0 0 1 4.9 0H16v1H6.95a2.5 2.5 0 0 1-4.9 0H0V8zm9.45 4a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3m-2.45 1a2.5 2.5 0 0 1 4.9 0H16v1h-2.05a2.5 2.5 0 0 1-4.9 0H0v-1z" />
+                      </svg>
+                      <p class="mb-0 text-nowrap">فیلتر</p>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div
+                      class="rounded-pill cursor text-secondary fs-10 py-2 px-3 border d-flex align-items-center justify-content-center gap-2">
+                      <p class="mb-0 text-nowrap">ارسال فردا</p>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div
+                      class="rounded-pill cursor text-secondary fs-10 py-2 px-3 border d-flex align-items-center justify-content-center gap-2">
+                      <p class="mb-0 text-nowrap">ارسال فروشنده</p>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div data-bs-toggle="offcanvas" data-bs-target="#offcanvasPriceBottom"
+                      aria-controls="offcanvasBottom"
+                      class="rounded-pill cursor text-secondary fs-10 py-2 px-3 border d-flex align-items-center justify-content-center gap-2">
+                      <p class="mb-0 text-nowrap">محدوده قیمت</p>
+                      <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="currentColor"
+                        class="flex-shrink-0 bi bi-chevron-down" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd"
+                          d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708" />
+                      </svg>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div data-bs-toggle="offcanvas" data-bs-target="#offcanvasTypeBottom"
+                      aria-controls="offcanvasBottom"
+                      class="rounded-pill cursor text-secondary fs-10 py-2 px-3 border d-flex align-items-center justify-content-center gap-2">
+                      <p class="mb-0 text-nowrap">نوع کالا</p>
+                      <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="currentColor"
+                        class="flex-shrink-0 bi bi-chevron-down" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd"
+                          d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708" />
+                      </svg>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div
+                      class="rounded-pill cursor text-secondary fs-10 py-2 px-3 border d-flex align-items-center justify-content-center gap-2">
+                      <p class="mb-0 text-nowrap">فقط کالاهای موجود</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="flex-wrap d-flex align-items-center justify-content-between gap-4 my-4">
+              <div class="d-lg-flex d-none align-items-center gap-4 flex-wrap">
                 <p class="fw-bold mb-0">مرتب سازی بر اساس:</p>
                 <p class="mb-0 cursor">گران ترین</p>
                 <p class="mb-0 cursor">ارزان ترین</p>
                 <p class="mb-0 cursor">جدیدترین ترین</p>
               </div>
-              <p class="mb-0 fw-bold cursor d-md-none">همه کالاها</p>
-              <p class="mb-0 fw-bold cursor">۳ کالا</p>
+              <p class="mb-0 fw-bold fs-sm-12 cursor d-lg-none">همه کالاها</p>
+              <p class="mb-0 fw-bold fs-sm-12 cursor">۳ کالا</p>
             </div>
             <div class="row g-0">
               <div class="col-lg-4 col-md-6 col-12">
@@ -1275,6 +1489,7 @@
 
   <script src="assets/js/jquery-3.7.1.min.js"></script>
   <script src="assets/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/js/swiper.min.js"></script>
   <script src="assets/js/scripts.js"></script>
 </body>
 

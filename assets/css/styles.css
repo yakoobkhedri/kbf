@@ -581,8 +581,9 @@ input[type="range"]::-moz-range-thumb {
     }
     #filtersidebar{
         position: fixed;
-        right: -1000px;
-        top: 0;
+        right: 0;
+        left: 0;
+        top: 5000px;
         bottom: 0;
         width: 100%;
         background-color: white;
@@ -591,7 +592,7 @@ input[type="range"]::-moz-range-thumb {
         margin: 0;
     }
       #filtersidebar.active{
-        right: 0;
+        top: 0;
       }
 }
 
@@ -605,7 +606,9 @@ input[type="range"]::-moz-range-thumb {
     .h-sm-auto {
         height: auto;
     }
-
+    .fs-sm-12 {
+        font-size: 12px;
+    }
     .fs-sm-16 {
         font-size: 16px;
     }
