@@ -37,7 +37,9 @@ body {
 .-top-6 {
     top: -6px;
 }
-
+.top-18 {
+    top: 18px;
+}
 /* bottom */
 .-bottom-50 {
     bottom: -50px;
@@ -578,6 +580,12 @@ input[type="range"]::-moz-range-thumb {
     .input1:focus {
         border: none;
         border-bottom: 2px solid rgb(0, 183, 255);
+    }
+    .h-lg-86vh{
+        height: 86vh;
+    }
+    .overflow-lg-auto{
+        overflow: auto;
     }
     #filtersidebar{
         position: fixed;
