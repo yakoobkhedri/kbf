@@ -1,0 +1,588 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+  <link rel='stylesheet' type='text/css' media='screen' href='assets/css/styles.css'>
+  <title>برند قطعات کمیاب لوازم خانگی</title>
+</head>
+
+<body>
+
+  <!-- menu mobile -->
+  <div class="offcanvas offcanvas-end w-100" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+    <div class="offcanvas-header">
+      <button type="button" class="btn-close btn-sm me-auto" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body">
+      <ul class="list-unstyled m-0 p-0 pb-5 mb-4 flex-column d-flex gap-4">
+        <a><img alt="logo" src="assets/img/arm2.png" class="d-block w-80 w-sm-59"></a>
+        <li>
+          <a class="active d-flex align-items-center gap-2 text-decoration-none text-secondary">
+            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" class="bi bi-house"
+              viewBox="0 0 16 16">
+              <path
+                d="M8.707 1.5a1 1 0 0 0-1.414 0L.646 8.146a.5.5 0 0 0 .708.708L2 8.207V13.5A1.5 1.5 0 0 0 3.5 15h9a1.5 1.5 0 0 0 1.5-1.5V8.207l.646.647a.5.5 0 0 0 .708-.708L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293zM13 7.207V13.5a.5.5 0 0 1-.5.5h-9a.5.5 0 0 1-.5-.5V7.207l5-5z">
+              </path>
+            </svg>
+            <p class="mb-0">صفحه اصلی</p>
+          </a>
+        </li>
+        <li>
+          <a class="d-flex align-items-center gap-2 text-decoration-none text-secondary">
+            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" class="bi bi-pencil"
+              viewBox="0 0 16 16">
+              <path
+                d="M12.146.146a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1 0 .708l-10 10a.5.5 0 0 1-.168.11l-5 2a.5.5 0 0 1-.65-.65l2-5a.5.5 0 0 1 .11-.168zM11.207 2.5 13.5 4.793 14.793 3.5 12.5 1.207zm1.586 3L10.5 3.207 4 9.707V10h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.293zm-9.761 5.175-.106.106-1.528 3.821 3.821-1.528.106-.106A.5.5 0 0 1 5 12.5V12h-.5a.5.5 0 0 1-.5-.5V11h-.5a.5.5 0 0 1-.468-.325">
+              </path>
+            </svg>
+            <p class="mb-0">وبلاگ</p>
+          </a>
+        </li>
+        <li>
+          <a class="d-flex align-items-center gap-2 text-decoration-none text-secondary">
+            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" class="bi bi-bag"
+              viewBox="0 0 16 16">
+              <path
+                d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1m3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4zM2 5h12v9a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1z">
+              </path>
+            </svg>
+            <p class="mb-0">سفارشات من</p>
+          </a>
+        </li>
+        <li>
+          <a class="d-flex align-items-center gap-2 text-decoration-none text-secondary">
+            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" class="bi bi-cash-coin"
+              viewBox="0 0 16 16">
+              <path fill-rule="evenodd" d="M11 15a4 4 0 1 0 0-8 4 4 0 0 0 0 8m5-4a5 5 0 1 1-10 0 5 5 0 0 1 10 0"></path>
+              <path
+                d="M9.438 11.944c.047.596.518 1.06 1.363 1.116v.44h.375v-.443c.875-.061 1.386-.529 1.386-1.207 0-.618-.39-.936-1.09-1.1l-.296-.07v-1.2c.376.043.614.248.671.532h.658c-.047-.575-.54-1.024-1.329-1.073V8.5h-.375v.45c-.747.073-1.255.522-1.255 1.158 0 .562.378.92 1.007 1.066l.248.061v1.272c-.384-.058-.639-.27-.696-.563h-.668zm1.36-1.354c-.369-.085-.569-.26-.569-.522 0-.294.216-.514.572-.578v1.1zm.432.746c.449.104.655.272.655.569 0 .339-.257.571-.709.614v-1.195z">
+              </path>
+              <path
+                d="M1 0a1 1 0 0 0-1 1v8a1 1 0 0 0 1 1h4.083q.088-.517.258-1H3a2 2 0 0 0-2-2V3a2 2 0 0 0 2-2h10a2 2 0 0 0 2 2v3.528c.38.34.717.728 1 1.154V1a1 1 0 0 0-1-1z">
+              </path>
+              <path d="M9.998 5.083 10 5a2 2 0 1 0-3.132 1.65 6 6 0 0 1 3.13-1.567"></path>
+            </svg>
+            <p class="mb-0">موجودی های من</p>
+          </a>
+        </li>
+        <li>
+          <a class="d-flex align-items-center gap-2 text-decoration-none text-secondary">
+            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" class="bi bi-layers-half"
+              viewBox="0 0 16 16">
+              <path
+                d="M8.235 1.559a.5.5 0 0 0-.47 0l-7.5 4a.5.5 0 0 0 0 .882L3.188 8 .264 9.559a.5.5 0 0 0 0 .882l7.5 4a.5.5 0 0 0 .47 0l7.5-4a.5.5 0 0 0 0-.882L12.813 8l2.922-1.559a.5.5 0 0 0 0-.882zM8 9.433 1.562 6 8 2.567 14.438 6z">
+              </path>
+            </svg>
+            <p class="mb-0">شرایط و قوانین</p>
+          </a>
+        </li>
+        <li>
+          <a class="d-flex align-items-center gap-2 text-decoration-none text-secondary">
+            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor"
+              class="bi bi-question-circle" viewBox="0 0 16 16">
+              <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16"></path>
+              <path
+                d="M5.255 5.786a.237.237 0 0 0 .241.247h.825c.138 0 .248-.113.266-.25.09-.656.54-1.134 1.342-1.134.686 0 1.314.343 1.314 1.168 0 .635-.374.927-.965 1.371-.673.489-1.206 1.06-1.168 1.987l.003.217a.25.25 0 0 0 .25.246h.811a.25.25 0 0 0 .25-.25v-.105c0-.718.273-.927 1.01-1.486.609-.463 1.244-.977 1.244-2.056 0-1.511-1.276-2.241-2.673-2.241-1.267 0-2.655.59-2.75 2.286m1.557 5.763c0 .533.425.927 1.01.927.609 0 1.028-.394 1.028-.927 0-.552-.42-.94-1.029-.94-.584 0-1.009.388-1.009.94">
+              </path>
+            </svg>
+            <p class="mb-0">سوالات متداول</p>
+          </a>
+        </li>
+        <li>
+          <a href="steps.html" class="d-flex align-items-center gap-2 text-decoration-none text-secondary">
+            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" class="bi bi-info-circle"
+              viewBox="0 0 16 16">
+              <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16"></path>
+              <path
+                d="m8.93 6.588-2.29.287-.082.38.45.083c.294.07.352.176.288.469l-.738 3.468c-.194.897.105 1.319.808 1.319.545 0 1.178-.252 1.465-.598l.088-.416c-.2.176-.492.246-.686.246-.275 0-.375-.193-.304-.533zM9 4.5a1 1 0 1 1-2 0 1 1 0 0 1 2 0">
+              </path>
+            </svg>
+            <p class="mb-0">راهنمای خرید</p>
+          </a>
+        </li>
+        <li>
+          <a class="d-flex align-items-center gap-2 text-decoration-none text-secondary">
+            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" class="bi bi-phone"
+              viewBox="0 0 16 16">
+              <path
+                d="M11 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1zM5 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2z">
+              </path>
+              <path d="M8 14a1 1 0 1 0 0-2 1 1 0 0 0 0 2"></path>
+            </svg>
+            <p class="mb-0">تماس با ما</p>
+          </a>
+        </li>
+        <li>
+          <a class="d-flex align-items-center gap-2 text-decoration-none text-secondary">
+            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" class="bi bi-x-diamond"
+              viewBox="0 0 16 16">
+              <path
+                d="M7.987 16a1.53 1.53 0 0 1-1.07-.448L.45 9.082a1.53 1.53 0 0 1 0-2.165L6.917.45a1.53 1.53 0 0 1 2.166 0l6.469 6.468A1.53 1.53 0 0 1 16 8.013a1.53 1.53 0 0 1-.448 1.07l-6.47 6.469A1.53 1.53 0 0 1 7.988 16zM7.639 1.17 4.766 4.044 8 7.278l3.234-3.234L8.361 1.17a.51.51 0 0 0-.722 0M8.722 8l3.234 3.234 2.873-2.873c.2-.2.2-.523 0-.722l-2.873-2.873zM8 8.722l-3.234 3.234 2.873 2.873c.2.2.523.2.722 0l2.873-2.873zM7.278 8 4.044 4.766 1.17 7.639a.51.51 0 0 0 0 .722l2.874 2.873z">
+              </path>
+            </svg>
+            <p class="mb-0">درباره ما</p>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- search modal -->
+  <div class="offcanvas offcanvas-top" tabindex="-1" id="offcanvasTop" aria-labelledby="offcanvasTopLabel">
+    <div class="offcanvas-header">
+      <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body">
+      <form class="d-flex align-items-center gap-3 h-44 max-w-600 bg-gray rounded-4 px-3 mx-auto mt-4">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="28px" height="28px">
+          <path
+            d="M21.414,18.586c-0.287-0.287-1.942-1.942-2.801-2.801c-0.719,1.142-1.686,2.109-2.828,2.828 c0.859,0.859,2.514,2.514,2.801,2.801c0.781,0.781,2.047,0.781,2.828,0C22.195,20.633,22.195,19.367,21.414,18.586z">
+          </path>
+          <circle cx="11" cy="11" r="9" opacity=".35"></circle>
+        </svg>
+        <input placeholder="جستجو" class="bg-transparent w-100 h-100 flex-grow-1 outline-none border-0">
+      </form>
+    </div>
+  </div>
+
+  <!-- profile modal -->
+  <div class="offcanvas offcanvas-bottom h-100" tabindex="-1" id="offcanvasBottom"
+    aria-labelledby="offcanvasBottomLabel">
+    <div class="offcanvas-header">
+      <button type="button" class="btn-close btn-sm me-auto" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body small pt-4 mt-2">
+      <ul class="list-unstyled m-0 p-0 flex-column d-flex gap-4">
+        <li>
+          <a class="d-flex align-items-center gap-2 text-decoration-none text-secondary">
+            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" class="bi bi-bag"
+              viewBox="0 0 16 16">
+              <path
+                d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1m3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4zM2 5h12v9a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1z">
+              </path>
+            </svg>
+            <p class="mb-0">سفارشات من</p>
+          </a>
+        </li>
+        <li>
+          <a class="d-flex align-items-center gap-2 text-decoration-none text-secondary">
+            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" class="bi bi-cash-coin"
+              viewBox="0 0 16 16">
+              <path fill-rule="evenodd" d="M11 15a4 4 0 1 0 0-8 4 4 0 0 0 0 8m5-4a5 5 0 1 1-10 0 5 5 0 0 1 10 0"></path>
+              <path
+                d="M9.438 11.944c.047.596.518 1.06 1.363 1.116v.44h.375v-.443c.875-.061 1.386-.529 1.386-1.207 0-.618-.39-.936-1.09-1.1l-.296-.07v-1.2c.376.043.614.248.671.532h.658c-.047-.575-.54-1.024-1.329-1.073V8.5h-.375v.45c-.747.073-1.255.522-1.255 1.158 0 .562.378.92 1.007 1.066l.248.061v1.272c-.384-.058-.639-.27-.696-.563h-.668zm1.36-1.354c-.369-.085-.569-.26-.569-.522 0-.294.216-.514.572-.578v1.1zm.432.746c.449.104.655.272.655.569 0 .339-.257.571-.709.614v-1.195z">
+              </path>
+              <path
+                d="M1 0a1 1 0 0 0-1 1v8a1 1 0 0 0 1 1h4.083q.088-.517.258-1H3a2 2 0 0 0-2-2V3a2 2 0 0 0 2-2h10a2 2 0 0 0 2 2v3.528c.38.34.717.728 1 1.154V1a1 1 0 0 0-1-1z">
+              </path>
+              <path d="M9.998 5.083 10 5a2 2 0 1 0-3.132 1.65 6 6 0 0 1 3.13-1.567"></path>
+            </svg>
+            <p class="mb-0">موجودی های من</p>
+          </a>
+        </li>
+        <li>
+          <a href="login.html" class="d-flex align-items-center gap-2 text-decoration-none text-secondary">
+            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor"
+              class="bi bi-box-arrow-in-left" viewBox="0 0 16 16">
+              <path fill-rule="evenodd"
+                d="M10 3.5a.5.5 0 0 0-.5-.5h-8a.5.5 0 0 0-.5.5v9a.5.5 0 0 0 .5.5h8a.5.5 0 0 0 .5-.5v-2a.5.5 0 0 1 1 0v2A1.5 1.5 0 0 1 9.5 14h-8A1.5 1.5 0 0 1 0 12.5v-9A1.5 1.5 0 0 1 1.5 2h8A1.5 1.5 0 0 1 11 3.5v2a.5.5 0 0 1-1 0z">
+              </path>
+              <path fill-rule="evenodd"
+                d="M4.146 8.354a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5H14.5a.5.5 0 0 1 0 1H5.707l2.147 2.146a.5.5 0 0 1-.708.708z">
+              </path>
+            </svg>
+            <p class="mb-0">ورود و ثبت نام</p>
+          </a>
+        </li>
+        <li>
+          <a class="d-flex align-items-center gap-2 text-decoration-none text-secondary">
+            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" class="bi bi-phone"
+              viewBox="0 0 16 16">
+              <path
+                d="M11 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1zM5 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2z">
+              </path>
+              <path d="M8 14a1 1 0 1 0 0-2 1 1 0 0 0 0 2"></path>
+            </svg>
+            <p class="mb-0">ارتباط با پشتیبانی</p>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+    <!-- model Modal -->
+  <div class="modal fade" id="modelModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fw-bold fs-18" id="exampleModalLabel">
+            ماشین لباسشویی مدل K-908-FG
+          </h1>
+          <button type="button" class="btn-close me-auto ms-0" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <form action="model-details.html">
+            <div class="mb-4">
+              <label class="text-dark fw-bold">عکس لباسشویی</label>
+              <input type="file" class="mt-4 border-gray2 rounded-8 p-2 input1 transition w-100">
+            </div>
+              <div class="mb-4">
+              <label class="text-dark fw-bold">اسم قطعه</label>
+              <input value="" type="tel"
+                class="text-end mt-4 border-gray2 rounded-8 px-2 h-48 input1 transition w-100 outline-none">
+            </div>
+            <div class="mb-4">
+              <label class="text-dark fw-bold">شماره سریال</label>
+              <input value="" type="tel"
+                class="text-end mt-4 border-gray2 rounded-8 px-2 h-48 input1 transition w-100 outline-none">
+            </div>
+            <div class="mb-4">
+              <label class="text-dark fw-bold">توضیحات</label>
+              <textarea class="mt-4 border-gray2 rounded-8 p-2 input1 transition w-100 outline-none"></textarea>
+            </div>
+            <button class="btnHover fw-bold bg-red border-0 h-48 rounded-8 text-white d-block mt-32 w-100">سفارشات من</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <header>
+    <a class="d-md-block d-none">
+      <img alt="img" src="assets/img/7912f1075a2c7e4c9626bdc08dc3063dbcff4f7d_1747806214.webp" class="img-fluid w-100">
+    </a>
+    <div class="py-sm-3 py-2 border-bottom border-2">
+      <div class="container">
+        <div class="d-flex align-items-center justify-content-center gap-4">
+          <div class="d-flex align-items-center gap-lg-4 gap-2 flex-grow-1">
+            <div data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"
+              class="d-block d-lg-none cursor">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-list"
+                viewBox="0 0 16 16">
+                <path fill-rule="evenodd"
+                  d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5" />
+              </svg>
+            </div>
+            <a><img alt="logo" src="assets/img/arm2.png" class="d-block w-80 w-sm-59"></a>
+            <form class="d-lg-flex d-none align-items-center gap-3 h-44 max-w-600 bg-gray rounded-4 px-3">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="28px" height="28px">
+                <path
+                  d="M21.414,18.586c-0.287-0.287-1.942-1.942-2.801-2.801c-0.719,1.142-1.686,2.109-2.828,2.828 c0.859,0.859,2.514,2.514,2.801,2.801c0.781,0.781,2.047,0.781,2.828,0C22.195,20.633,22.195,19.367,21.414,18.586z" />
+                <circle cx="11" cy="11" r="9" opacity=".35" />
+              </svg>
+              <input placeholder="جستجو" class="bg-transparent w-100 h-100 flex-grow-1 outline-none border-0">
+            </form>
+          </div>
+          <div class="d-flex align-items-center gap-4">
+            <a class="position-relative">
+              <p
+                class="bg-warning fs-12 rounded-circle mb-0 -top-6 -right-8 position-absolute w-20 h-20 text-white d-flex align-items-center justify-content-center">
+                30</p>
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"
+                class="text-secondary bi bi-bell" viewBox="0 0 16 16">
+                <path
+                  d="M8 16a2 2 0 0 0 2-2H6a2 2 0 0 0 2 2M8 1.918l-.797.161A4 4 0 0 0 4 6c0 .628-.134 2.197-.459 3.742-.16.767-.376 1.566-.663 2.258h10.244c-.287-.692-.502-1.49-.663-2.258C12.134 8.197 12 6.628 12 6a4 4 0 0 0-3.203-3.92zM14.22 12c.223.447.481.801.78 1H1c.299-.199.557-.553.78-1C2.68 10.2 3 6.88 3 6c0-2.42 1.72-4.44 4.005-4.901a1 1 0 1 1 1.99 0A5 5 0 0 1 13 6c0 .88.32 4.2 1.22 6" />
+              </svg>
+            </a>
+            <a class="position-relative d-none d-sm-block">
+              <p
+                class="bg-success fs-12 rounded-circle mb-0 -top-6 -right-8 position-absolute w-20 h-20 text-white d-flex align-items-center justify-content-center">
+                30</p>
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"
+                class="text-secondary bi bi-cart" viewBox="0 0 16 16">
+                <path
+                  d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M3.102 4l1.313 7h8.17l1.313-7zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2" />
+              </svg>
+            </a>
+            <a class="position-relative">
+              <p
+                class="bg-danger fs-12 rounded-circle mb-0 -top-6 -right-8 position-absolute w-20 h-20 text-white d-flex align-items-center justify-content-center">
+                30</p>
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"
+                class="text-secondary bi bi-envelope" viewBox="0 0 16 16">
+                <path
+                  d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1zm13 2.383-4.708 2.825L15 11.105zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741M1 11.105l4.708-2.897L1 5.383z" />
+              </svg>
+            </a>
+            <div data-bs-toggle="offcanvas" data-bs-target="#offcanvasTop" aria-controls="offcanvasTop"
+              class="d-lg-none cursor text-secondary">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-search"
+                viewBox="0 0 16 16">
+                <path
+                  d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0" />
+              </svg>
+            </div>
+            <a href="login.html"
+              class="rounded-4 btn btn-outline-dark px-3 py-2 text-decoration-none fs-14 fw-bold d-none d-sm-flex align-items-center justify-content-center gap-2">
+              <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor"
+                class="text-secondary bi bi-box-arrow-in-left" viewBox="0 0 16 16">
+                <path fill-rule="evenodd"
+                  d="M10 3.5a.5.5 0 0 0-.5-.5h-8a.5.5 0 0 0-.5.5v9a.5.5 0 0 0 .5.5h8a.5.5 0 0 0 .5-.5v-2a.5.5 0 0 1 1 0v2A1.5 1.5 0 0 1 9.5 14h-8A1.5 1.5 0 0 1 0 12.5v-9A1.5 1.5 0 0 1 1.5 2h8A1.5 1.5 0 0 1 11 3.5v2a.5.5 0 0 1-1 0z" />
+                <path fill-rule="evenodd"
+                  d="M4.146 8.354a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5H14.5a.5.5 0 0 1 0 1H5.707l2.147 2.146a.5.5 0 0 1-.708.708z" />
+              </svg>
+              <p class="mb-0">ورود / ثبت نام</p>
+            </a>
+          </div>
+        </div>
+        <nav class="mt-3 d-none d-sm-flex align-items-center gap-3 flex-wrap">
+          <div class="cursor dropdown">
+            <div role="button" data-bs-toggle="dropdown" aria-expanded="false"
+              class="d-sm-flex d-none align-items-center gap-2">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                class="bi bi-list-nested" viewBox="0 0 16 16">
+                <path fill-rule="evenodd"
+                  d="M4.5 11.5A.5.5 0 0 1 5 11h10a.5.5 0 0 1 0 1H5a.5.5 0 0 1-.5-.5m-2-4A.5.5 0 0 1 3 7h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m-2-4A.5.5 0 0 1 1 3h10a.5.5 0 0 1 0 1H1a.5.5 0 0 1-.5-.5" />
+              </svg>
+              <p class="mb-0 fw-bold">دسته بندی کالاها</p>
+            </div>
+            <div class="dropdown-menu text-end">
+              <div><a class="dropdown-item" href="#">لوازم برقی</a></div>
+              <div><a class="dropdown-item" href="#">لوازم برقی</a></div>
+              <div><a class="dropdown-item" href="#">لوازم برقی</a></div>
+            </div>
+          </div>
+          <ul class="list-unstyled m-0 p-0 d-lg-flex d-none align-items-center gap-xl-3 gap-2">
+            <li>
+              <a class="active d-flex align-items-center gap-2 text-decoration-none">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-house"
+                  viewBox="0 0 16 16">
+                  <path
+                    d="M8.707 1.5a1 1 0 0 0-1.414 0L.646 8.146a.5.5 0 0 0 .708.708L2 8.207V13.5A1.5 1.5 0 0 0 3.5 15h9a1.5 1.5 0 0 0 1.5-1.5V8.207l.646.647a.5.5 0 0 0 .708-.708L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293zM13 7.207V13.5a.5.5 0 0 1-.5.5h-9a.5.5 0 0 1-.5-.5V7.207l5-5z" />
+                </svg>
+                <p class="mb-0 fs-14">صفحه اصلی</p>
+              </a>
+            </li>
+            <li>
+              <a class="d-flex align-items-center gap-2 text-decoration-none">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-pencil"
+                  viewBox="0 0 16 16">
+                  <path
+                    d="M12.146.146a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1 0 .708l-10 10a.5.5 0 0 1-.168.11l-5 2a.5.5 0 0 1-.65-.65l2-5a.5.5 0 0 1 .11-.168zM11.207 2.5 13.5 4.793 14.793 3.5 12.5 1.207zm1.586 3L10.5 3.207 4 9.707V10h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.293zm-9.761 5.175-.106.106-1.528 3.821 3.821-1.528.106-.106A.5.5 0 0 1 5 12.5V12h-.5a.5.5 0 0 1-.5-.5V11h-.5a.5.5 0 0 1-.468-.325" />
+                </svg>
+                <p class="mb-0 fs-14">وبلاگ</p>
+              </a>
+            </li>
+            <li>
+              <a class="d-flex align-items-center gap-2 text-decoration-none">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-bag"
+                  viewBox="0 0 16 16">
+                  <path
+                    d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1m3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4zM2 5h12v9a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1z" />
+                </svg>
+                <p class="mb-0 fs-14">سفارشات من</p>
+              </a>
+            </li>
+            <li>
+              <a class="d-flex align-items-center gap-2 text-decoration-none">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                  class="bi bi-cash-coin" viewBox="0 0 16 16">
+                  <path fill-rule="evenodd" d="M11 15a4 4 0 1 0 0-8 4 4 0 0 0 0 8m5-4a5 5 0 1 1-10 0 5 5 0 0 1 10 0" />
+                  <path
+                    d="M9.438 11.944c.047.596.518 1.06 1.363 1.116v.44h.375v-.443c.875-.061 1.386-.529 1.386-1.207 0-.618-.39-.936-1.09-1.1l-.296-.07v-1.2c.376.043.614.248.671.532h.658c-.047-.575-.54-1.024-1.329-1.073V8.5h-.375v.45c-.747.073-1.255.522-1.255 1.158 0 .562.378.92 1.007 1.066l.248.061v1.272c-.384-.058-.639-.27-.696-.563h-.668zm1.36-1.354c-.369-.085-.569-.26-.569-.522 0-.294.216-.514.572-.578v1.1zm.432.746c.449.104.655.272.655.569 0 .339-.257.571-.709.614v-1.195z" />
+                  <path
+                    d="M1 0a1 1 0 0 0-1 1v8a1 1 0 0 0 1 1h4.083q.088-.517.258-1H3a2 2 0 0 0-2-2V3a2 2 0 0 0 2-2h10a2 2 0 0 0 2 2v3.528c.38.34.717.728 1 1.154V1a1 1 0 0 0-1-1z" />
+                  <path d="M9.998 5.083 10 5a2 2 0 1 0-3.132 1.65 6 6 0 0 1 3.13-1.567" />
+                </svg>
+                <p class="mb-0 fs-14">موجودی های من</p>
+              </a>
+            </li>
+            <li>
+              <a class="d-flex align-items-center gap-2 text-decoration-none">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                  class="bi bi-layers-half" viewBox="0 0 16 16">
+                  <path
+                    d="M8.235 1.559a.5.5 0 0 0-.47 0l-7.5 4a.5.5 0 0 0 0 .882L3.188 8 .264 9.559a.5.5 0 0 0 0 .882l7.5 4a.5.5 0 0 0 .47 0l7.5-4a.5.5 0 0 0 0-.882L12.813 8l2.922-1.559a.5.5 0 0 0 0-.882zM8 9.433 1.562 6 8 2.567 14.438 6z" />
+                </svg>
+                <p class="mb-0 fs-14">شرایط و قوانین</p>
+              </a>
+            </li>
+            <li>
+              <a class="d-flex align-items-center gap-2 text-decoration-none">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                  class="bi bi-question-circle" viewBox="0 0 16 16">
+                  <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16" />
+                  <path
+                    d="M5.255 5.786a.237.237 0 0 0 .241.247h.825c.138 0 .248-.113.266-.25.09-.656.54-1.134 1.342-1.134.686 0 1.314.343 1.314 1.168 0 .635-.374.927-.965 1.371-.673.489-1.206 1.06-1.168 1.987l.003.217a.25.25 0 0 0 .25.246h.811a.25.25 0 0 0 .25-.25v-.105c0-.718.273-.927 1.01-1.486.609-.463 1.244-.977 1.244-2.056 0-1.511-1.276-2.241-2.673-2.241-1.267 0-2.655.59-2.75 2.286m1.557 5.763c0 .533.425.927 1.01.927.609 0 1.028-.394 1.028-.927 0-.552-.42-.94-1.029-.94-.584 0-1.009.388-1.009.94" />
+                </svg>
+                <p class="mb-0 fs-14">سوالات متداول</p>
+              </a>
+            </li>
+            <li>
+              <a href="steps.html" class="d-flex align-items-center gap-2 text-decoration-none">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                  class="bi bi-info-circle" viewBox="0 0 16 16">
+                  <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16" />
+                  <path
+                    d="m8.93 6.588-2.29.287-.082.38.45.083c.294.07.352.176.288.469l-.738 3.468c-.194.897.105 1.319.808 1.319.545 0 1.178-.252 1.465-.598l.088-.416c-.2.176-.492.246-.686.246-.275 0-.375-.193-.304-.533zM9 4.5a1 1 0 1 1-2 0 1 1 0 0 1 2 0" />
+                </svg>
+                <p class="mb-0 fs-14">راهنمای خرید</p>
+              </a>
+            </li>
+            <li>
+              <a class="d-flex align-items-center gap-2 text-decoration-none">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-phone"
+                  viewBox="0 0 16 16">
+                  <path
+                    d="M11 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1zM5 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2z" />
+                  <path d="M8 14a1 1 0 1 0 0-2 1 1 0 0 0 0 2" />
+                </svg>
+                <p class="mb-0 fs-14">تماس با ما</p>
+              </a>
+            </li>
+            <li>
+              <a class="d-flex align-items-center gap-2 text-decoration-none">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                  class="bi bi-x-diamond" viewBox="0 0 16 16">
+                  <path
+                    d="M7.987 16a1.53 1.53 0 0 1-1.07-.448L.45 9.082a1.53 1.53 0 0 1 0-2.165L6.917.45a1.53 1.53 0 0 1 2.166 0l6.469 6.468A1.53 1.53 0 0 1 16 8.013a1.53 1.53 0 0 1-.448 1.07l-6.47 6.469A1.53 1.53 0 0 1 7.988 16zM7.639 1.17 4.766 4.044 8 7.278l3.234-3.234L8.361 1.17a.51.51 0 0 0-.722 0M8.722 8l3.234 3.234 2.873-2.873c.2-.2.2-.523 0-.722l-2.873-2.873zM8 8.722l-3.234 3.234 2.873 2.873c.2.2.523.2.722 0l2.873-2.873zM7.278 8 4.044 4.766 1.17 7.639a.51.51 0 0 0 0 .722l2.874 2.873z" />
+                </svg>
+                <p class="mb-0 fs-14">درباره ما</p>
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+    <!-- mobile navigate -->
+    <div
+      class="d-sm-none z-10000 border-top border-dark position-fixed p-3 shadow-lg bg-white bottom-0 end-0 start-0 w-100 d-flex align-items-center justify-content-between gap-2">
+      <div class="d-flex align-items-center gap-3">
+        <a><img alt="img" src="assets/img/arm2.png" class="w-49"></a>
+        <p class="mb-0 fw-bold fs-12 text-secondary">دسته بندی ها</p>
+      </div>
+      <div class="d-flex align-items-center gap-3 fw-bold fs-12 text-secondary">
+        <a data-bs-toggle="offcanvas" data-bs-target="#offcanvasBottom" aria-controls="offcanvasBottom">پروفایل</a>
+        <a>سبد خرید</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+
+    <section class="mt-5">
+      <div class="container">
+        <h3 class="fw-bold text-center fs-sm-16">انواع برندهای قطعات کمیاب ماشین لباسشویی</h3>
+        <div class="row g-4 mt-4 align-items-center">
+          <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6">
+             <a data-bs-toggle="modal" data-bs-target="#modelModal" class="d-flex flex-column align-items-center justify-content-center gap-4 hover-1 rounded-3 bg-white border min-h-206 text-dark p-4 text-center text-decoration-none">
+              <img alt="img" src="assets/img/258804.webp" class="d-block w-101">
+              <p class="mb-0 fw-bold">ماشین لباسشویی LG</p>
+            </a>
+          </div>
+          <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6">
+             <a data-bs-toggle="modal" data-bs-target="#modelModal" class="d-flex flex-column align-items-center justify-content-center gap-4 hover-1 rounded-3 bg-white border min-h-206 text-dark p-4 text-center text-decoration-none">
+              <img alt="img" src="assets/img/nody-دانلود-لوگو-هواوی-1631619325.png" class="d-block w-101">
+              <p class="mb-0 fw-bold">ماشین لباسشویی SAMSUNG</p>
+            </a>
+          </div>
+          <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6">
+             <a data-bs-toggle="modal" data-bs-target="#modelModal" class="d-flex flex-column align-items-center justify-content-center gap-4 hover-1 rounded-3 bg-white border min-h-206 text-dark p-4 text-center text-decoration-none">
+              <img alt="img" src="assets/img/Bosch-Logo.png" class="d-block w-101">
+              <p class="mb-0 fw-bold">ماشین لباسشویی BOCH</p>
+            </a>
+          </div>
+          <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6">
+             <a data-bs-toggle="modal" data-bs-target="#modelModal" class="d-flex flex-column align-items-center justify-content-center gap-4 hover-1 rounded-3 bg-white border min-h-206 text-dark p-4 text-center text-decoration-none">
+              <img alt="img" src="assets/img/1729263756_adidas-logo-png.png" class="d-block w-101">
+              <p class="mb-0 fw-bold">ماشین لباسشویی ADIDAS</p>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="border-top pt-5 mt-5 pb-5 pb-sm-0 mb-4 mb-sm-0">
+    <div class="container">
+      <div class="d-flex align-items-center justify-content-end gap-4">
+        <a href="#"
+          class="btn btn-outline-danger d-flex align-items-center justify-content-center gap-3 text-decoration-none rounded-3 py-2 px-3">
+          <p class="mb-0">بازگشت به بالا</p>
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-up"
+            viewBox="0 0 16 16">
+            <path fill-rule="evenodd"
+              d="M7.646 4.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1-.708.708L8 5.707l-5.646 5.647a.5.5 0 0 1-.708-.708z" />
+          </svg>
+        </a>
+      </div>
+      <div class="mt-5 border-bottom pb-4">
+        <div class="row mx-0 g-4">
+          <div class="col-xl-3">
+            <p class="fs-20 fw-bold">
+              کی بی اف ؛ بزرگترین فروشگاه اینترنتی ایران
+            </p>
+            <p class="mb-0 text-muted fs-14 lh-lg text-justify">
+              دیجی کالا سال‌ها است که به انتخاب اول بسیاری از خریداران اینترنتی تبدیل شده است. دیجی کالا به عنوان
+              بزرگ‌ترین و معتبرترین فروشگاه آنلاین ایران، شناخته‌شده‌ترین فروشگاه نیز محسوب می‌شود. این فروشگاه آنلاین
+              نه‌تنها گسترده‌ترین تنوع کالا را در دسته‌بندی‌های مختلف ارائه می‌دهد.
+            </p>
+          </div>
+          <div class="col-1 d-none d-xl-block"></div>
+          <div class="col-xl-2 col-md-6">
+            <p class="fw-bold fs-18">با دیجی‌کالا</p>
+            <ul class="m-0 p-0 list-unstyled d-flex flex-column gap-3 text-secondary">
+              <li>
+                <a>اتاق خبر دیجی‌کالا</a>
+              </li>
+              <li>
+                <a>فروش در دیجی‌کالا</a>
+              </li>
+              <li>
+                <a>فرصت‌های شغلی</a>
+              </li>
+              <li>
+                <a>گزارش تخلف در دیجی‌کالا</a>
+              </li>
+              <li>
+                <a>تماس با دیجی‌کالا</a>
+              </li>
+              <li>
+                <a>درباره دیجی‌کالا</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-xl-3 col-md-6">
+            <a class="d-block"><img alt="img" src="assets/img/arm2.png" class="w-101 d-block mx-auto"></a>
+            <div class="mt-3 d-flex flex-wrap align-items-center justify-content-center gap-4 fw-bold">
+              <p class="mb-0 fs-12">تلفن پشتیبانی ۶۱۹۳۰۰۰۰ - ۰۲۱</p>
+              <p class="mb-0 fs-12">۰۲۱-۹۱۰۰۰۱۰۰</p>
+              <p class="mb-0 fs-12">۷ روز هفته، ۲۴ ساعته پاسخگوی شما هستیم</p>
+            </div>
+          </div>
+          <div class="col-xl-3">
+            <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-xl-end gap-3">
+              <a class="d-block rounded-3 border p-3">
+                <img alt="img" src="assets/img/logo.png" class="w-70 h-80 d-block">
+              </a>
+              <a class="d-block rounded-3 border p-3">
+                <img alt="img" src="assets/img/kasbokar.webp" class="w-70 h-80 d-block">
+              </a>
+              <a class="d-block rounded-3 border p-3">
+                <img alt="img" src="assets/img/rezi.webp" class="w-70 h-80 d-block">
+              </a>
+              <a class="d-block rounded-3 border p-3">
+                <img alt="img" src="assets/img/sapra.webp" class="w-70 h-80 d-block">
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="mt-4 border-bottom">
+        <p class="text-center fs-12 text-muted">
+          برای استفاده از مطالب دیجی‌کالا، داشتن «هدف غیرتجاری» و ذکر «منبع» کافیست. تمام حقوق اين وب‌سايت نیز برای شرکت
+          نوآوران فن آوازه (فروشگاه آنلاین دیجی‌کالا) است.
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/jquery-3.7.1.min.js"></script>
+  <script src="assets/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
