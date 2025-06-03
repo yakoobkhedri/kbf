@@ -390,7 +390,10 @@ header nav ul>li>a.active::after {
     right: 0;
     width: 100%;
 }
-
+header div.z-10000 {
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+}
 /* products page */
 .productCard {
     padding-left: 8px;
@@ -616,6 +619,9 @@ input[type="range"]::-moz-range-thumb {
     }
     .fs-sm-12 {
         font-size: 12px;
+    }
+        .fs-sm-14 {
+        font-size: 14px;
     }
     .fs-sm-16 {
         font-size: 16px;
