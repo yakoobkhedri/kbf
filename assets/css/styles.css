@@ -81,11 +81,15 @@ body {
 .bg-gray {
     background-color: #f0f0f1;
 }
-
+.secondary-bg {
+  background-color: #FEF5F6;
+}
 .bg-gradient-1 {
     background-image: linear-gradient(180deg, #6B0004 26%, #ED1B24 100%);
 }
-
+.bg-transparent-select{
+    background-color: transparent;
+}
 /* max width */
 
 .max-w-400 {
@@ -107,7 +111,10 @@ body {
 .mt-32 {
     margin-top: 32px;
 }
-
+/* rotate */
+.rotate-180{
+    transform: rotate(180deg);
+}
 /* rounded */
 .rounded-4 {
     border-radius: 4px;
@@ -140,7 +147,9 @@ body {
 .w-49 {
     width: 49px;
 }
-
+.w-51 {
+  width: 51px;
+}
 .w-70 {
     width: 70px;
 }
@@ -156,7 +165,9 @@ body {
 .w-117 {
     width: 117px;
 }
-
+.w-200 {
+  width: 200px;
+}
 .w-260 {
     width: 260px;
 }
@@ -543,7 +554,55 @@ input[type="range"]::-moz-range-thumb {
     background: #e72b2a;
     pointer-events: auto;
 }
-
+/* profile */
+.profileMenu li {
+  border-left: 4px solid transparent;
+}
+.profileMenu li.active {
+  border-left: 4px solid #F7ADAF;
+}
+.profileMenu li:hover, .profileMenu li.active {
+  background-color: rgb(238, 238, 238);
+}
+.profileMenuContent > div:first-child, .orderContent > div:first-child, .listTabContent > div:first-child, .commentContent > div:first-child, .notifTabsContent > div:first-child {
+  display: block;
+}
+.profileMenuContent > div, .orderContent > div, .listTabContent > div, .commentContent > div, .notifTabsContent > div {
+  display: none;
+}
+.orderTab, .listTab, .commentTab {
+  position: relative;
+}
+.orderTab.active p, .listTab.active p, .commentTab.active p {
+  color: #F7ADAF !important;
+}
+.orderTab.active span, .listTab.active span, .commentTab.active span {
+  background-color: #F7ADAF !important;
+}
+.orderTab.active::after, .listTab.active::after, .commentTab.active::after {
+  height: 4px;
+  background-color: #F7ADAF;
+}
+.orderTab::after, .listTab::after, .commentTab::after {
+  content: '';
+  position: absolute;
+  right: 0;
+  left: 0;
+  bottom: -17px;
+  width: 100%;
+  height: 0;
+  border-radius: 80px;
+  background-color: white;
+}
+.dropdown-toggle::after{
+    display: none;
+}
+img[alt="sale-icon"] {
+  width: 28px;
+  border-radius: 50%;
+  padding: 4px;
+  transition: all .4s;
+}
 @media screen and (max-width: 768px) {
     .main {
         width: 80%;
@@ -575,7 +634,7 @@ input[type="range"]::-moz-range-thumb {
 /* responsive */
 
 @media screen and (max-width: 992px) {
-    .input1 {
+    .input1,.bg-transparent-select {
         background-color: #f0f0f1;
         border: 2px solid transparent;
     }
