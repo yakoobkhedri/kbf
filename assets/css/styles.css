@@ -111,6 +111,10 @@ body {
 .mt-32 {
     margin-top: 32px;
 }
+/* modal */
+.modal {
+  z-index:1000000
+}
 /* rotate */
 .rotate-180{
     transform: rotate(180deg);

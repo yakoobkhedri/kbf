@@ -133,7 +133,7 @@
   <!-- search modal -->
   <div class="offcanvas offcanvas-top" tabindex="-1" id="offcanvasTop" aria-labelledby="offcanvasTopLabel">
     <div class="offcanvas-header">
-      <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      <button type="button" class="btn-close me-auto ms-0" data-bs-dismiss="offcanvas" aria-label="Close"></button>
     </div>
     <div class="offcanvas-body">
       <form class="d-flex align-items-center gap-3 h-44 max-w-600 bg-gray rounded-4 px-3 mx-auto mt-4">
@@ -218,16 +218,16 @@
     <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
       <div class="modal-content">
         <div class="modal-header">
-          <h1 class="modal-title fs-5 fw-bold" id="exampleModalLabel">Create List</h1>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          <h1 class="modal-title fs-5 fw-bold" id="exampleModalLabel">افزودن لیست</h1>
+          <button type="button" class="btn-close me-auto ms-0" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
         <div class="modal-body">
           <div class="mb-3">
-            <label class="form-label fw-bold">List Title <span class="text-danger">*</span></label>
+            <label class="form-label fw-bold">عنوان لیست <span class="text-danger">*</span></label>
             <input class="form-control">
           </div>
           <div class="mb-3">
-            <label class="form-label fw-bold">Description</label>
+            <label class="form-label fw-bold">توضیحات</label>
             <textarea class="form-control"></textarea>
           </div>
         </div>
@@ -243,25 +243,25 @@
     <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
       <div class="modal-content">
         <div class="modal-header">
-          <h1 class="modal-title fs-5 fw-bold" id="exampleModalLabel">Add Personal Information</h1>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          <h1 class="modal-title fs-5 fw-bold" id="exampleModalLabel">افزودن اطلاعات شخصی</h1>
+          <button type="button" class="btn-close me-auto ms-0" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
         <div class="modal-body">
           <div class="mb-3">
-            <label class="form-label fw-bold">First Name <span class="text-danger">*</span></label>
+            <label class="form-label fw-bold">نام <span class="text-danger">*</span></label>
             <input class="form-control">
           </div>
           <div class="mb-3">
-            <label class="form-label fw-bold">Last Name <span class="text-danger">*</span></label>
+            <label class="form-label fw-bold">نام خانوادگی <span class="text-danger">*</span></label>
             <input class="form-control">
           </div>
           <div class="mb-3">
-            <label class="form-label fw-bold">International Code <span class="text-danger">*</span></label>
+            <label class="form-label fw-bold">کد ملی <span class="text-danger">*</span></label>
             <input class="form-control">
           </div>
         </div>
         <div class="modal-footer border-top-0">
-          <button type="button" class="btn btn-primary">Check Iinformation</button>
+          <button type="button" class="btn btn-primary">بررسی اطلاعات</button>
         </div>
       </div>
     </div>
@@ -272,68 +272,68 @@
     <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
       <div class="modal-content">
         <div class="modal-header">
-          <h1 class="modal-title fs-5 fw-bold" id="exampleModalLabel">Add New Address</h1>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          <h1 class="modal-title fs-5 fw-bold" id="exampleModalLabel">افزودن آدرس جدید</h1>
+          <button type="button" class="btn-close me-auto ms-0" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
         <div class="modal-body">
           <div class="mb-3">
-            <label class="form-label fw-bold">Address <span class="text-danger">*</span></label>
+            <label class="form-label fw-bold">آدرس <span class="text-danger">*</span></label>
             <textarea class="form-control"></textarea>
           </div>
           <div class="row g-3 mb-3">
             <div class="col-sm-6">
-              <label class="form-label fw-bold">State</label>
+              <label class="form-label fw-bold">استان</label>
               <select class="form-select">
-                <option>Tehran</option>
-                <option>Qom</option>
-                <option>Ilam</option>
-                <option>Isfahan</option>
+                <option>تهران</option>
+                <option>قم</option>
+                <option>ایلام</option>
+                <option>اصفهان</option>
               </select>
             </div>
             <div class="col-sm-6">
-              <label class="form-label fw-bold">City</label>
+              <label class="form-label fw-bold">شهر</label>
               <select class="form-select">
-                <option>Tehran</option>
-                <option>Qom</option>
-                <option>Ilam</option>
-                <option>Isfahan</option>
+                <option>تهران</option>
+                <option>قم</option>
+                <option>ایلام</option>
+                <option>اصفهان</option>
               </select>
             </div>
             <div class="col-12">
-              <label class="form-label fw-bold">The Neighbourhood</label>
+              <label class="form-label fw-bold">محله</label>
               <select class="form-select">
-                <option>Tajrish</option>
-                <option>Vanak</option>
-                <option>Darband</option>
-                <option>Lavasan</option>
+                <option>تجریش</option>
+                <option>ئنک</option>
+                <option>دربند</option>
+                <option>لواسان</option>
               </select>
             </div>
           </div>
           <div class="row mb-3 g-3">
             <div class="col-lg-4">
-              <label class="form-label fw-bold">Plaque <span class="text-danger">*</span></label>
+              <label class="form-label fw-bold">پلاک <span class="text-danger">*</span></label>
               <input class="form-control">
             </div>
             <div class="col-lg-4">
-              <label class="form-label fw-bold">Unit <span class="text-danger">*</span></label>
+              <label class="form-label fw-bold">واحد <span class="text-danger">*</span></label>
               <input class="form-control">
             </div>
             <div class="col-lg-4">
-              <label class="form-label fw-bold">Postal code <span class="text-danger">*</span></label>
+              <label class="form-label fw-bold">کدپستی <span class="text-danger">*</span></label>
               <input class="form-control">
             </div>
           </div>
           <div class="row g-3 mb-3">
             <div class="col-sm-6">
-              <label class="form-label fw-bold">Recipient's FirstName <span class="text-danger">*</span></label>
+              <label class="form-label fw-bold">نام گیرنده <span class="text-danger">*</span></label>
               <input class="form-control">
             </div>
             <div class="col-sm-6">
-              <label class="form-label fw-bold">Recipient's LasstName <span class="text-danger">*</span></label>
+              <label class="form-label fw-bold">نام خانوادگی گیرنده <span class="text-danger">*</span></label>
               <input class="form-control">
             </div>
             <div class="col-sm-6">
-              <label class="form-label fw-bold">Phone Number <span class="text-danger">*</span></label>
+              <label class="form-label fw-bold">شماره موبایل <span class="text-danger">*</span></label>
               <input class="form-control">
             </div>
           </div>
@@ -350,68 +350,68 @@
     <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
       <div class="modal-content">
         <div class="modal-header">
-          <h1 class="modal-title fs-5 fw-bold" id="exampleModalLabel">Add New Address</h1>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          <h1 class="modal-title fs-5 fw-bold" id="exampleModalLabel">ویرایش آدرس جدید</h1>
+          <button type="button" class="btn-close me-auto ms-0" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
         <div class="modal-body">
           <div class="mb-3">
-            <label class="form-label fw-bold">Address <span class="text-danger">*</span></label>
+            <label class="form-label fw-bold">آدرس <span class="text-danger">*</span></label>
             <textarea class="form-control"></textarea>
           </div>
           <div class="row g-3 mb-3">
             <div class="col-sm-6">
-              <label class="form-label fw-bold">State</label>
+              <label class="form-label fw-bold">استان</label>
               <select class="form-select">
-                <option>Tehran</option>
-                <option>Qom</option>
-                <option>Ilam</option>
-                <option>Isfahan</option>
+                <option>تهران</option>
+                <option>قم</option>
+                <option>ایلام</option>
+                <option>اصفهان</option>
               </select>
             </div>
             <div class="col-sm-6">
               <label class="form-label fw-bold">City</label>
-              <select class="form-select">
-                <option>Tehran</option>
-                <option>Qom</option>
-                <option>Ilam</option>
-                <option>Isfahan</option>
+                <select class="form-select">
+                <option>تهران</option>
+                <option>قم</option>
+                <option>ایلام</option>
+                <option>اصفهان</option>
               </select>
             </div>
             <div class="col-12">
-              <label class="form-label fw-bold">The Neighbourhood</label>
+              <label class="form-label fw-bold">محله</label>
               <select class="form-select">
-                <option>Tajrish</option>
-                <option>Vanak</option>
-                <option>Darband</option>
-                <option>Lavasan</option>
+                <option>تجریش</option>
+                <option>ونک</option>
+                <option>دربند</option>
+                <option>لواسان</option>
               </select>
             </div>
           </div>
           <div class="row mb-3 g-3">
             <div class="col-lg-4">
-              <label class="form-label fw-bold">Plaque <span class="text-danger">*</span></label>
+              <label class="form-label fw-bold">پلاک <span class="text-danger">*</span></label>
               <input class="form-control">
             </div>
             <div class="col-lg-4">
-              <label class="form-label fw-bold">Unit <span class="text-danger">*</span></label>
+              <label class="form-label fw-bold">واحد <span class="text-danger">*</span></label>
               <input class="form-control">
             </div>
             <div class="col-lg-4">
-              <label class="form-label fw-bold">Postal code <span class="text-danger">*</span></label>
+              <label class="form-label fw-bold">کدپستی <span class="text-danger">*</span></label>
               <input class="form-control">
             </div>
           </div>
           <div class="row g-3 mb-3">
             <div class="col-sm-6">
-              <label class="form-label fw-bold">Recipient's FirstName <span class="text-danger">*</span></label>
+              <label class="form-label fw-bold">نام گیرنده <span class="text-danger">*</span></label>
               <input class="form-control">
             </div>
             <div class="col-sm-6">
-              <label class="form-label fw-bold">Recipient's LasstName <span class="text-danger">*</span></label>
+              <label class="form-label fw-bold">نام خانوادگی گیرنده <span class="text-danger">*</span></label>
               <input class="form-control">
             </div>
             <div class="col-sm-6">
-              <label class="form-label fw-bold">Phone Number <span class="text-danger">*</span></label>
+              <label class="form-label fw-bold">شماره موبایل <span class="text-danger">*</span></label>
               <input class="form-control">
             </div>
           </div>
@@ -428,13 +428,14 @@
     <div class="modal-dialog modal-dialog-centered">
       <div class="modal-content">
         <div class="modal-header border-bottom-0">
-          <h5 class="modal-title" id="exampleModalLabel">Are you sure to remove this address from the list of
-            addresses?</h5>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          <h5 class="modal-title" id="exampleModalLabel">
+            آیا مطمئن هستید که میخواهید این آدرس را از لیست آدرس ها حذف کنید؟
+          </h5>
+          <button type="button" class="btn-close me-auto ms-0" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
         <div class="modal-footer border-top-0">
-          <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Cancel</button>
-          <button type="button" class="btn btn-danger">Delete Address</button>
+          <button type="button" class="btn btn-primary" data-bs-dismiss="modal">لغو</button>
+          <button type="button" class="btn btn-danger">حذف آدرس</button>
         </div>
       </div>
     </div>
@@ -445,12 +446,12 @@
     <div class="modal-dialog modal-dialog-centered">
       <div class="modal-content">
         <div class="modal-header border-bottom-0">
-          <h5 class="modal-title" id="exampleModalLabel">Should this comment be deleted?</h5>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          <h5 class="modal-title" id="exampleModalLabel">آیا این کامنت حذف شود؟</h5>
+          <button type="button" class="btn-close me-auto ms-0" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
         <div class="modal-footer border-top-0">
-          <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Cancel</button>
-          <button type="button" class="btn btn-danger">Delete</button>
+          <button type="button" class="btn btn-primary" data-bs-dismiss="modal">لغو</button>
+          <button type="button" class="btn btn-danger">حذف</button>
         </div>
       </div>
     </div>
@@ -462,10 +463,10 @@
       <div class="modal-content">
         <div class="modal-header">
           <div>
-            <h5 class="modal-title fw-bold" id="exampleModalLabel">Your Comment</h5>
-            <h6 class="modal-title fw-bold text-muted" id="exampleModalLabel">about clothes model MP3199</h6>
+            <h5 class="modal-title fw-bold" id="exampleModalLabel">نظر شما</h5>
+            <h6 class="modal-title fw-bold text-muted" id="exampleModalLabel">در مورد موتور مدل khf7665</h6>
           </div>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          <button type="button" class="btn-close me-auto ms-0" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
         <div class="modal-body">
           <div class="row">
@@ -473,21 +474,21 @@
               <div class="border-bottom py-4">
                 <div class="d-flex align-items-center gap-1 fw-bold justify-content-center">
                   <span class="text-danger fw-bold">*</span>
-                  <span>Rate it!</span>
-                  <span>Bad</span>
+                  <span>رای به این</span>
+                  <span>بد</span>
                 </div>
                 <input type="range" class="form-range mt-2" min="0" max="5" step="1" id="customRange3">
                 <div class="d-flex fs-8 text-center fw-bold align-items-center justify-content-between">
                   <span>.</span>
-                  <span>Very Bad</span>
-                  <span>Bad</span>
-                  <span>Normal</span>
-                  <span>Good</span>
-                  <span>Very Good</span>
+                  <span>خیلی بد</span>
+                  <span>بد</span>
+                  <span>معمولی</span>
+                  <span>خوب</span>
+                  <span>خیلی خوب</span>
                 </div>
               </div>
               <div class="border-bottom py-4">
-                <p class="fw-bold">Buy this product to others...</p>
+                <p class="fw-bold">خرید این موتور را به دیگران...</p>
                 <div class="d-flex mt-4 align-items-center justify-content-between suggest">
                   <div
                     class="rounded-3 border active p-3 cursor d-flex gap-2 text-center align-items-center justify-content-center">
@@ -497,7 +498,7 @@
                         <path
                           d="M8.864.046C7.908-.193 7.02.53 6.956 1.466c-.072 1.051-.23 2.016-.428 2.59-.125.36-.479 1.013-1.04 1.639-.557.623-1.282 1.178-2.131 1.41C2.685 7.288 2 7.87 2 8.72v4.001c0 .845.682 1.464 1.448 1.545 1.07.114 1.564.415 2.068.723l.048.03c.272.165.578.348.97.484.397.136.861.217 1.466.217h3.5c.937 0 1.599-.477 1.934-1.064a1.86 1.86 0 0 0 .254-.912c0-.152-.023-.312-.077-.464.201-.263.38-.578.488-.901.11-.33.172-.762.004-1.149.069-.13.12-.269.159-.403.077-.27.113-.568.113-.857 0-.288-.036-.585-.113-.856a2.144 2.144 0 0 0-.138-.362 1.9 1.9 0 0 0 .234-1.734c-.206-.592-.682-1.1-1.2-1.272-.847-.282-1.803-.276-2.516-.211a9.84 9.84 0 0 0-.443.05 9.365 9.365 0 0 0-.062-4.509A1.38 1.38 0 0 0 9.125.111L8.864.046zM11.5 14.721H8c-.51 0-.863-.069-1.14-.164-.281-.097-.506-.228-.776-.393l-.04-.024c-.555-.339-1.198-.731-2.49-.868-.333-.036-.554-.29-.554-.55V8.72c0-.254.226-.543.62-.65 1.095-.3 1.977-.996 2.614-1.708.635-.71 1.064-1.475 1.238-1.978.243-.7.407-1.768.482-2.85.025-.362.36-.594.667-.518l.262.066c.16.04.258.143.288.255a8.34 8.34 0 0 1-.145 4.725.5.5 0 0 0 .595.644l.003-.001.014-.003.058-.014a8.908 8.908 0 0 1 1.036-.157c.663-.06 1.457-.054 2.11.164.175.058.45.3.57.65.107.308.087.67-.266 1.022l-.353.353.353.354c.043.043.105.141.154.315.048.167.075.37.075.581 0 .212-.027.414-.075.582-.05.174-.111.272-.154.315l-.353.353.353.354c.047.047.109.177.005.488a2.224 2.224 0 0 1-.505.805l-.353.353.353.354c.006.005.041.05.041.17a.866.866 0 0 1-.121.416c-.165.288-.503.56-1.066.56z" />
                       </svg>
-                      <p class="fw-bold fs-7 mt-1">I suggest</p>
+                      <p class="fw-bold fs-7 mt-1">پیشنهاد میدم</p>
                     </div>
                   </div>
                   <div class="rounded-3 border p-3 cursor d-flex text-center align-items-center justify-content-center">
@@ -507,7 +508,7 @@
                         <path fill-rule="evenodd"
                           d="M4.475 5.458c-.284 0-.514-.237-.47-.517C4.28 3.24 5.576 2 7.825 2c2.25 0 3.767 1.36 3.767 3.215 0 1.344-.665 2.288-1.79 2.973-1.1.659-1.414 1.118-1.414 2.01v.03a.5.5 0 0 1-.5.5h-.77a.5.5 0 0 1-.5-.495l-.003-.2c-.043-1.221.477-2.001 1.645-2.712 1.03-.632 1.397-1.135 1.397-2.028 0-.979-.758-1.698-1.926-1.698-1.009 0-1.71.529-1.938 1.402-.066.254-.278.461-.54.461h-.777ZM7.496 14c.622 0 1.095-.474 1.095-1.09 0-.618-.473-1.092-1.095-1.092-.606 0-1.087.474-1.087 1.091S6.89 14 7.496 14Z" />
                       </svg>
-                      <p class="fw-bold fs-7 mt-1">I am not sure</p>
+                      <p class="fw-bold fs-7 mt-1">مطمئن نیستم</p>
                     </div>
                   </div>
                   <div class="rounded-3 border p-3 cursor d-flex text-center align-items-center justify-content-center">
@@ -517,18 +518,18 @@
                         <path
                           d="M8.864 15.674c-.956.24-1.843-.484-1.908-1.42-.072-1.05-.23-2.015-.428-2.59-.125-.36-.479-1.012-1.04-1.638-.557-.624-1.282-1.179-2.131-1.41C2.685 8.432 2 7.85 2 7V3c0-.845.682-1.464 1.448-1.546 1.07-.113 1.564-.415 2.068-.723l.048-.029c.272-.166.578-.349.97-.484C6.931.08 7.395 0 8 0h3.5c.937 0 1.599.478 1.934 1.064.164.287.254.607.254.913 0 .152-.023.312-.077.464.201.262.38.577.488.9.11.33.172.762.004 1.15.069.13.12.268.159.403.077.27.113.567.113.856 0 .289-.036.586-.113.856-.035.12-.08.244-.138.363.394.571.418 1.2.234 1.733-.206.592-.682 1.1-1.2 1.272-.847.283-1.803.276-2.516.211a9.877 9.877 0 0 1-.443-.05 9.364 9.364 0 0 1-.062 4.51c-.138.508-.55.848-1.012.964l-.261.065zM11.5 1H8c-.51 0-.863.068-1.14.163-.281.097-.506.229-.776.393l-.04.025c-.555.338-1.198.73-2.49.868-.333.035-.554.29-.554.55V7c0 .255.226.543.62.65 1.095.3 1.977.997 2.614 1.709.635.71 1.064 1.475 1.238 1.977.243.7.407 1.768.482 2.85.025.362.36.595.667.518l.262-.065c.16-.04.258-.144.288-.255a8.34 8.34 0 0 0-.145-4.726.5.5 0 0 1 .595-.643h.003l.014.004.058.013a8.912 8.912 0 0 0 1.036.157c.663.06 1.457.054 2.11-.163.175-.059.45-.301.57-.651.107-.308.087-.67-.266-1.021L12.793 7l.353-.354c.043-.042.105-.14.154-.315.048-.167.075-.37.075-.581 0-.211-.027-.414-.075-.581-.05-.174-.111-.273-.154-.315l-.353-.354.353-.354c.047-.047.109-.176.005-.488a2.224 2.224 0 0 0-.505-.804l-.353-.354.353-.354c.006-.005.041-.05.041-.17a.866.866 0 0 0-.121-.415C12.4 1.272 12.063 1 11.5 1z" />
                       </svg>
-                      <p class="fw-bold fs-7 mt-1">I do not suggest</p>
+                      <p class="fw-bold fs-7 mt-1">پیشنهاد نمیدم</p>
                     </div>
                   </div>
                 </div>
               </div>
               <div class="py-4">
-                <p class="fw-bold">Describe your point of view</p>
+                <p class="fw-bold">امتیاز دادن تان را توضیح دهید</p>
                 <div class="mt-4">
-                  <label class="form-label fw-bold">Comment Title</label>
+                  <label class="form-label fw-bold">عنوان نظر</label>
                   <div class="position-relative">
                     <input class="form-control" value="Great">
-                    <small class="text-danger">The entered text must be at least 3 characters long</small>
+                    <small class="text-danger">متن وارد شده باید حداقل 3 کاراکتر داشته باشد</small>
                     <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor"
                       class="bi bi-plus-lg position-absolute end-0 me-2 top-0 mt-2 cursor" viewBox="0 0 16 16">
                       <path fill-rule="evenodd"
@@ -537,10 +538,10 @@
                   </div>
                 </div>
                 <div class="mt-4">
-                  <label class="form-label fw-bold">positive points</label>
+                  <label class="form-label fw-bold">نکات مثبت</label>
                   <div class="position-relative">
                     <input class="form-control" value="Great">
-                    <small class="text-danger">The entered text must be at least 3 characters long</small>
+                   <small class="text-danger">متن وارد شده باید حداقل 3 کاراکتر داشته باشد</small>
                     <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor"
                       class="bi bi-plus-lg position-absolute end-0 me-2 top-0 mt-2 cursor" viewBox="0 0 16 16">
                       <path fill-rule="evenodd"
@@ -549,10 +550,10 @@
                   </div>
                 </div>
                 <div class="mt-4">
-                  <label class="form-label fw-bold">Negative points</label>
+                  <label class="form-label fw-bold">نکات منفی</label>
                   <div class="position-relative">
                     <input class="form-control" value="Great">
-                    <small class="text-danger">The entered text must be at least 3 characters long</small>
+                   <small class="text-danger">متن وارد شده باید حداقل 3 کاراکتر داشته باشد</small>
                     <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor"
                       class="bi bi-plus-lg position-absolute end-0 me-2 top-0 mt-2 cursor" viewBox="0 0 16 16">
                       <path fill-rule="evenodd"
@@ -561,20 +562,22 @@
                   </div>
                 </div>
                 <div class="mt-4">
-                  <label class="form-label fw-bold">Comment Text <span class="text-danger fw-bold">*</span></label>
+                  <label class="form-label fw-bold">عنوان نظر <span class="text-danger fw-bold">*</span></label>
                   <div class="position-relative">
-                    <textarea rows="4" class="form-control">Great</textarea>
+                    <textarea rows="4" class="form-control">عالی</textarea>
                   </div>
                 </div>
                 <div class="mt-4">
-                  <label class="form-label fw-bold">Submit content</label>
-                  <small class="text-muted d-block fs-7 fw-bold">Maximum 5 photos of 5 MB and 3 videos in MP4 format
-                    up to 100 MB</small>
+                  <label class="form-label fw-bold">محتوای ثبت شده</label>
+                  <small class="text-muted d-block fs-7 fw-bold">
+                    حداکثر ۵ عکس ۵ مگابایتی و ۳ ویدیو با فرمت MP4
+تا سقف ۱۰۰ مگابایت
+                  </small>
                   <div class="position-relative text-center fw-bold border-dash rounded-3 py-3 px-2 cursor my-3 w-61">
                     <input type="file" class="position-absolute top-0 bottom-0 end-0 start-0 h-100 w-100 cursor"
                       style="opacity: 0;">
                     <div class="text-primary">
-                      <p>Add</p>
+                      <p>افزودن</p>
                       <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="currentColor"
                         class="bi bi-plus-circle mt-2" viewBox="0 0 16 16">
                         <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
@@ -585,36 +588,32 @@
                   </div>
                   <label class="fw-bold form-label cursor">
                     <input type="checkbox" class="form-check-input me-1">
-                    Post a comment anonymously
+              یک نظر ناشناس ارسال کنید
                   </label>
                 </div>
               </div>
             </div>
             <div class="col-sm-6">
               <div class="border rounded-3 p-2 mt-3">
-                <p class="fw-bold">Guide others to choose this product by writing your comments.</p>
-                <small class="text-primary fs-7 fw-bold mt-2">Please read the summary of the following rules before
-                  posting a comment:</small>
-                <small class="fw-bold d-block fs-7 mt-2">
-                  It is necessary that the submitted content is in accordance with the customs and values ​​of the
-                  society and with an official expression and free from sharp tone, mockery and insults.
-                  Avoid sending links to other sites and providing personal information such as contact number, email
-                  and social network ID.
-                  Keep in mind that the ultimate goal of providing an opinion about a product is to provide specific
-                  and useful information to guide other users in the process of choosing and purchasing a product.
-                  Due to the structure of the comments section, avoid asking questions or asking for guidance in this
-                  section and ask your questions in the "Question and Answer" section.
+                <p class="fw-bold">با نوشتن نظرات خود دیگران را در انتخاب این محصول راهنمایی کنید.</p>
+                <small class="text-primary fs-7 fw-bold mt-2">
+                  لطفاً قبل از ارسال نظر، خلاصه قوانین زیر را مطالعه کنید:
                 </small>
-                <p class="text-danger fw-bold mt-2">Adding photos and videos to comments:</p>
+                <small class="fw-bold d-block fs-7 mt-2">
+                  لازم است محتوای ارسالی مطابق با عرف و ارزش‌های جامعه و با بیانی رسمی و عاری از لحن تند، تمسخر و توهین باشد.
+
+از ارسال لینک به سایت‌های دیگر و ارائه اطلاعات شخصی مانند شماره تماس، ایمیل و شناسه شبکه اجتماعی خودداری کنید.
+
+در نظر داشته باشید که هدف نهایی از ارائه نظر در مورد یک محصول، ارائه اطلاعات خاص و مفید برای راهنمایی سایر کاربران در فرآیند انتخاب و خرید محصول است.
+
+با توجه به ساختار بخش نظرات، از پرسیدن سوال یا درخواست راهنمایی در این بخش خودداری کنید و سوالات خود را در بخش "پرسش و پاسخ" مطرح کنید.
+                </small>
+                <p class="text-danger fw-bold mt-2">اضافه کردن عکس و فیلم به نظرات:</p>
                 <p class="mt-2">
-                  By reading this <a class="text-primary fw-bold">link</a>, you can see the most useful photo template
-                  of the product you have purchased.
+                  با خواندن این <a class="text-primary fw-bold">لینک</a>، می‌توانید مفیدترین الگوی عکس محصولی که خریداری کرده‌اید را ببینید.
                 </p>
                 <p class="mt-2">
-                  Any criticisms and comments regarding the Digikala site, problems with receiving services and
-                  product requests, as well as sales violation reports (such as reports of non-original or
-                  inconsistent products) can be sent to info@digikala.com or by calling 021-61930000 and do not write
-                  them in Avoid the comments section.
+                  هرگونه انتقاد و نظری در رابطه با سایت دیجی‌کالا، مشکلات مربوط به دریافت خدمات و درخواست محصول و همچنین گزارش‌های تخلف فروش (مانند گزارش محصولات غیر اصلی یا مغایرت) را می‌توانید به آدرس info@digikala.com یا با شماره تلفن 021-61930000 ارسال کنید و از نوشتن آنها در بخش نظرات خودداری کنید.
                 </p>
               </div>
             </div>
@@ -622,7 +621,7 @@
         </div>
         <div class="modal-footer py-2">
           <input type="submit" value="Register a comment" class="btn btn-danger me-auto">
-          <p class="fw-bold">Registering a comment means agreeing to the rules of publishing digital goods.</p>
+          <p class="fw-bold">ثبت نظر به منزله موافقت با قوانین نشر کالای دیجیتال است.</p>
         </div>
       </div>
     </div>
@@ -633,12 +632,12 @@
     <div class="modal-dialog modal-dialog-centered">
       <div class="modal-content">
         <div class="modal-header border-bottom-0">
-          <h5 class="modal-title" id="exampleModalLabel">Are you sure you want to delete all messages?</h5>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          <h5 class="modal-title" id="exampleModalLabel">آیا مطمئنید که می خواهید تمام پیام ها را پاک کنید؟</h5>
+          <button type="button" class="btn-close me-auto ms-0" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
         <div class="modal-footer border-top-0">
-          <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Cancel</button>
-          <button type="button" class="btn btn-danger">Clear</button>
+          <button type="button" class="btn btn-primary" data-bs-dismiss="modal">لغو</button>
+          <button type="button" class="btn btn-danger">پاک کردن</button>
         </div>
       </div>
     </div>
@@ -649,14 +648,14 @@
     <div class="modal-dialog modal-dialog-centered">
       <div class="modal-content">
         <div class="modal-header">
-          <h5 class="modal-title fw-bold fs-5" id="exampleModalLabel">Share</h5>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          <h5 class="modal-title fw-bold fs-5" id="exampleModalLabel">اشتراک</h5>
+          <button type="button" class="btn-close me-auto ms-0" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
         <div class="modal-body">
-          <p class="fw-bold">Share this product with your friends!</p>
+          <p class="fw-bold">این محصول را با دوستانتان به اشتراک بگذارید.</p>
           <a
             class="border-dark border rounded-3 my-3 gap-2 text-dark fw-bold py-2 d-flex align-items-center justify-content-center">
-            Copy the link
+            کپی لینک
             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-c-circle"
               viewBox="0 0 16 16">
               <path
@@ -666,7 +665,7 @@
           <div class="d-flex align-items-center gap-2">
             <a
               class="d-flex flex-grow-1 text-white fw-bold justify-content-center align-items-center gap-2 btn btn-success">
-              WhatsApp
+              واتس اپ
               <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-whatsapp"
                 viewBox="0 0 16 16">
                 <path
@@ -675,7 +674,7 @@
             </a>
             <a
               class="d-flex flex-grow-1 text-white fw-bold justify-content-center align-items-center gap-2 btn btn-info">
-              Twitter
+              توئیتر
               <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-twitter"
                 viewBox="0 0 16 16">
                 <path
@@ -1048,26 +1047,52 @@
                   </svg>
                 </a>
               </div>
-              <div class="d-flex myorders align-items-center justify-content-around mt-5">
+              <div class="d-flex flex-wrap gap-4 myorders align-items-center justify-content-sm-around justify-content-start mt-5">
                 <a class="text-decoration-none d-flex align-items-center gap-3 text-dark fw-bold">
                   <img alt="order" src="assets/img/status-processing.svg">
                   <div>
-                    <p class="h4"><span>0</span> سفارش</p>
-                    <p class="text-muted">اخیر</p>
+                    <p class="h4 fs-sm-14"><span>0</span> سفارش</p>
+                    <p class="text-muted fs-sm-12">اخیر</p>
                   </div>
                 </a>
                 <a class="text-decoration-none d-flex align-items-center gap-3 text-dark fw-bold">
                   <img alt="order" src="assets/img/status-delivered.svg">
                   <div>
-                    <p class="h4"><span>1</span> سفارش</p>
-                    <p class="text-muted">تحویل داده شده</p>
+                    <p class="h4 fs-sm-14"><span>1</span> سفارش</p>
+                    <p class="text-muted fs-sm-12">تحویل داده شده</p>
                   </div>
                 </a>
-                <a class="text-decoration-none d-none align-items-center gap-3 text-dark fw-bold me-5">
-                  <img alt="order" src="assets/img/status-returned.svg">
+                <a class="text-decoration-none d-flex align-items-center gap-3 text-dark fw-bold">
+                  <svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M32 8.00001C27.5817 8.00001 24 11.5817 24 16C24 20.4183 27.5817 24 32 24C36.4183 24 40 20.4183 40 16C40 11.5817 36.4183 8.00001 32 8.00001ZM18.6667 16C18.6667 8.63621 24.6362 2.66667 32 2.66667C39.3638 2.66667 45.3333 8.63621 45.3333 16C45.3333 23.3638 39.3638 29.3333 32 29.3333C24.6362 29.3333 18.6667 23.3638 18.6667 16Z" fill="url(#paint0_linear)"/>
+<path d="M10.6667 17.9333C10.6667 16.2765 12.0098 14.9333 13.6667 14.9333H50.3333C51.9902 14.9333 53.3333 16.2765 53.3333 17.9333V53.6667C53.3333 56.4281 51.0947 58.6667 48.3333 58.6667H15.6667C12.9052 58.6667 10.6667 56.4281 10.6667 53.6667V17.9333Z" fill="url(#paint1_linear)"/>
+<g filter="url(#filter0_i)">
+<path d="M26.6667 25.6L20.2667 32L26.6667 38.4H33.0667L28.8 34.1333H36.2667L36.4796 34.1386C38.7371 34.2495 40.5333 36.115 40.5333 38.4C40.5333 40.7564 38.6231 42.6667 36.2667 42.6667H22.4V46.9333H36.2667L36.5325 46.9293C41.1223 46.7889 44.8 43.0239 44.8 38.4C44.8 33.6872 40.9795 29.8667 36.2667 29.8667H28.8L33.0667 25.6H26.6667Z" fill="#D09A2D"/>
+</g>
+<defs>
+<filter id="filter0_i" x="20.2667" y="25.6" width="24.5333" height="21.3333" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+<feOffset/>
+<feGaussianBlur stdDeviation="2"/>
+<feComposite in2="hardAlpha" operator="arithmetic" k2="-1" k3="1"/>
+<feColorMatrix type="matrix" values="0 0 0 0 0.6875 0 0 0 0 0.480719 0 0 0 0 0.0633265 0 0 0 1 0"/>
+<feBlend mode="normal" in2="shape" result="effect1_innerShadow"/>
+</filter>
+<linearGradient id="paint0_linear" x1="21.3333" y1="5.33334" x2="21.3333" y2="26.6667" gradientUnits="userSpaceOnUse">
+<stop stop-color="#FFD681"/>
+<stop offset="1" stop-color="#E6B040"/>
+</linearGradient>
+<linearGradient id="paint1_linear" x1="30.4005" y1="4.98528" x2="-1.58915" y2="38.5906" gradientUnits="userSpaceOnUse">
+<stop stop-color="#FFD782"/>
+<stop offset="1" stop-color="#E3AC39"/>
+</linearGradient>
+</defs>
+</svg>
                   <div>
-                    <p class="h4"><span>0</span> سفارش</p>
-                    <p class="text-muted">برگشت خورده</p>
+                    <p class="h4 fs-sm-14"><span>0</span> سفارش</p>
+                    <p class="text-muted fs-sm-12">برگشت خورده</p>
                   </div>
                 </a>
               </div>
@@ -1088,7 +1113,7 @@
                 </a>
               </div>
               <div class="row g-4 mt-5">
-                <div class="col-lg-3 col-md-4 col-6">
+                <div class="col-lg-3 col-md-4 col-sm-6">
                   <div>
                     <div class="overflow-hidden position-relative img-box">
                       <img alt="product" src="assets/img/145149-144927-144507-2_result.webp"
@@ -1111,7 +1136,7 @@
                     </div>
                   </div>
                 </div>
-                <div class="col-lg-3 col-md-4 col-6">
+                <div class="col-lg-3 col-md-4 col-sm-6">
                   <div>
                     <div class="overflow-hidden position-relative img-box">
                       <img alt="product" src="assets/img/145149-144927-144507-2_result.webp"
@@ -1193,9 +1218,9 @@
                     </a>
                     <div class="d-flex flex-wrap fw-bold align-items-center gap-md-5 gap-2 mt-4">
                       <span class="text-dark">23 فروردین 1403</span>
-                      <p class="text-muted">کد: <span class="text-dark">2374336</span></p>
-                      <p class="text-muted">مدل: <span class="text-dark">2376</span></p>
-                      <p class="text-muted">مبلغ: <span class="text-dark">24 $</span></p>
+                      <p class="text-muted mb-0">کد: <span class="text-dark">2374336</span></p>
+                      <p class="text-muted mb-0">مدل: <span class="text-dark">2376</span></p>
+                      <p class="text-muted mb-0">مبلغ: <span class="text-dark">24 $</span></p>
                     </div>
                     <img alt="current" src="assets/img/145149-144927-144507-2_result.webp" class="img-fluid w-200 my-3">
                     <a class="d-block border-top pt-3 text-center text-md-end">مشاهده جزئیات</a>
@@ -1220,9 +1245,9 @@
                     </a>
                     <div class="d-flex flex-wrap fw-bold align-items-center gap-md-5 gap-2 mt-4">
                       <span class="text-dark">23 فروردین 1404</span>
-                      <p class="text-muted">کد: <span class="text-dark">2374336</span></p>
-                      <p class="text-muted">مدل: <span class="text-dark">2376</span></p>
-                      <p class="text-muted">مبلغ: <span class="text-dark">24 $</span></p>
+                      <p class="text-muted mb-0">کد: <span class="text-dark">2374336</span></p>
+                      <p class="text-muted mb-0">مدل: <span class="text-dark">2376</span></p>
+                      <p class="text-muted mb-0">مبلغ: <span class="text-dark">24 $</span></p>
                     </div>
                     <img alt="current" src="assets/img/145149-144927-144507-2_result.webp" class="img-fluid w-200 my-3">
                     <a class="d-block border-top pt-3 text-center text-md-end">مشاهده جزئیات</a>
@@ -1324,7 +1349,7 @@
                 <!-- Favorite List -->
                 <div data-id="1" style="display: none;">
                   <div class="border row g-4 rounded-3 p-3 mx-1 my-3">
-                    <div class="col-lg-3 col-md-4 col-6">
+                    <div class="col-lg-3 col-md-4 col-sm-6">
                       <div class="border">
                         <div class="overflow-hidden position-relative img-box" style="max-height: 410px;">
                           <img alt="product"
@@ -1348,7 +1373,7 @@
                         </div>
                       </div>
                     </div>
-                    <div class="col-lg-3 col-md-4 col-6">
+                    <div class="col-lg-3 col-md-4 col-sm-6">
                       <div class="border">
                         <div class="overflow-hidden position-relative img-box" style="max-height: 410px;">
                           <img alt="product"
@@ -1372,7 +1397,7 @@
                         </div>
                       </div>
                     </div>
-                    <div class="col-lg-3 col-md-4 col-6">
+                    <div class="col-lg-3 col-md-4 col-sm-6">
                       <div class="border">
                         <div class="overflow-hidden position-relative img-box" style="max-height: 410px;">
                           <img alt="product"
@@ -1396,7 +1421,7 @@
                         </div>
                       </div>
                     </div>
-                    <div class="col-lg-3 col-md-4 col-6">
+                    <div class="col-lg-3 col-md-4 col-sm-6">
                       <div class="border">
                         <div class="overflow-hidden position-relative img-box" style="max-height: 410px;">
                           <img alt="product"
@@ -1532,7 +1557,7 @@
                     <div class="d-flex align-items-center justify-content-between">
                       <p class="fw-bold">ارومیه، خیابان میثم، کوچه 11، پلاک 3</p>
                       <div>
-                        <a class="nav-link dropdown-toggle pe-0" href="#" id="navbarDropdown" role="button"
+                        <a class="nav-link dropdown-toggle ps-0" href="#" id="navbarDropdown" role="button"
                           data-bs-toggle="dropdown" aria-expanded="false">
                           <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"
                             class="bi bi-three-dots-vertical cursor text-dark" viewBox="0 0 16 16">
@@ -1626,7 +1651,7 @@
                     <div class="d-flex align-items-center justify-content-between">
                       <p class="fw-bold">ارومیه، خیابان میثم، کوچه 11، پلاک 3</p>
                       <div>
-                        <a class="nav-link dropdown-toggle pe-0" href="#" id="navbarDropdown" role="button"
+                        <a class="nav-link dropdown-toggle ps-0" href="#" id="navbarDropdown" role="button"
                           data-bs-toggle="dropdown" aria-expanded="false">
                           <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"
                             class="bi bi-three-dots-vertical cursor text-dark" viewBox="0 0 16 16">
@@ -1783,7 +1808,7 @@
               <div class="col-lg-6 border-bottom py-3 border-end d-flex align-items-center justify-content-between">
                 <div>
                   <p class="text-muted fw-bold">شماره موبایل<span
-                      class="bg-success rounded-pill px-2 py-1 text-white fs-7">تایید شده</span>
+                      class="bg-success rounded-pill px-2 py-1 mx-2 text-white fs-7">تایید شده</span>
                   </p>
                   <p class="fw-bold mt-1">09149492490</p>
                 </div>
@@ -1830,7 +1855,7 @@
               <div class="col-lg-6 border-bottom py-3 d-flex align-items-center justify-content-between">
                 <div>
                   <p class="text-muted fw-bold">نوع پول برگشتی <span
-                      class="bg-success rounded-pill px-2 py-1 text-white fs-7">confirmed</span>
+                      class="bg-success rounded-pill px-2 py-1 mx-2 text-white fs-7">تایید شده</span>
                   </p>
                   <p class="fw-bold mt-1">کارت بانکی</p>
                 </div>
