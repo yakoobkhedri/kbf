@@ -18,7 +18,9 @@ body {
     user-select: none;
     overflow-x: hidden;
 }
-
+a{
+    text-decoration: none;
+}
 /* font */
 
 .fw-bold {
@@ -36,6 +38,9 @@ body {
 
 .-top-6 {
     top: -6px;
+}
+.-top-9{
+    top: -9px;
 }
 .top-18 {
     top: 18px;
@@ -127,7 +132,9 @@ body {
 .rounded-8 {
     border-radius: 8px;
 }
-
+.rounded-16{
+    border-radius: 16px;
+}
 /* max width */
 .max-w-600 {
     max-width: 600px;
@@ -178,7 +185,9 @@ body {
 .w-260 {
     width: 260px;
 }
-
+.w-797 {
+  width: 797px;
+}
 /* height */
 .h-16 {
     height: 16px;
@@ -230,12 +239,17 @@ body {
 .h-482 {
     height: 482px;
 }
-
+/* shadow */
+.shadow-3 {
+  box-shadow: 0px 0px 30px 0px #00000026;
+}
 /* z index */
 .z-1 {
     z-index: 1;
 }
-
+.z-20 {
+    z-index: 20;
+}
 .z-10000 {
     z-index: 10000;
 }
@@ -414,6 +428,32 @@ header nav ul>li>a.active::after {
 header div.z-10000 {
     border-top-left-radius: 30px;
     border-top-right-radius: 30px;
+}
+header ul li:hover, header ul .dropdownMenu > a:hover, .mobileMenu a:hover, .tabs:hover, header ul li.active, header ul .dropdownMenu > a.active, .mobileMenu a.active, .tabs.active, .tabs2.active {
+  color: #e62b2a !important;
+}
+header ul .dropdownMenu > a.active svg path, .mobileMenu a.active svg path, .tabs.active svg path, .tabs2.active svg path {
+  fill: #e62b2a !important;
+}
+.tabContent > div,.tabContent2 > div{
+    display: none!important;
+}
+.tabContent > div.active,.tabContent2 > div.active{
+    display: block!important;
+}
+.dropdownMenu a{
+    color: black;
+}
+.dropdownMenu {
+  opacity: 0;
+  visibility: hidden;
+  transition: all .4s;
+  top: 50px;
+}
+.dropdownBtn:hover .dropdownMenu {
+  opacity: 100%;
+  visibility: visible;
+  top: 20px;
 }
 /* products page */
 .productCard {
@@ -674,6 +714,9 @@ img[alt="sale-icon"] {
       #filtersidebar.active{
         top: 0;
       }
+      .w-797 {
+  width: 536px;
+}
 }
 
 @media screen and (max-width: 768px) {

@@ -1,3 +1,44 @@
+// menu
+
+
+let tabsMenu = Array.from(document.querySelectorAll('.tabs'));
+let tabsMenu2 = Array.from(document.querySelectorAll('.tabs2'));
+let tabContent = Array.from(document.querySelectorAll('.tabContent > div'));
+let tabContent2 = Array.from(document.querySelectorAll('.tabContent2 > div'));
+
+tabsMenu.forEach((item) => {
+    item.addEventListener('mouseenter', function () {
+        tabsMenu.forEach((items) => { items.classList.remove('active') });
+        tabContent2.forEach((items) => { items.classList.remove('active') });
+        item.classList.add('active');
+        let tabId = item.dataset.id;
+        tabContent.forEach((content) => {
+            let contentId = content.dataset.id;
+            if (tabId === contentId) {
+                content.classList.add('active');
+            } else {
+              content.classList.remove('active');
+            }
+        })
+    })
+})
+tabsMenu2.forEach((item) => {
+  item.addEventListener('mouseenter', function () {
+      tabsMenu2.forEach((items) => { items.classList.remove('active') });
+      item.classList.add('active');
+      let tabId = item.dataset.id;
+      tabContent2.forEach((content) => {
+          let contentId = content.dataset.id;
+          if (tabId === contentId) {
+              content.classList.add('active');
+          } else {
+            content.classList.remove('active');
+          }
+      })
+  })
+})
+
+
 // input number
 
 let increment = Array.from(document.getElementsByClassName('increment'));
