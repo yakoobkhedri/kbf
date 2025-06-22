@@ -67,3 +67,31 @@ filterBtn.forEach((item)=>{
         item.querySelector('svg').classList.toggle('active');
     })
 })
+
+
+// accordion
+
+let accordionBtn = Array.from(document.getElementsByClassName('accordionBtn'));
+let accordionBtn2 = Array.from(document.getElementsByClassName('accordionBtn2'));
+let accordionBtn3 = Array.from(document.getElementsByClassName('accordionBtn3'));
+let filterBox = Array.from(document.getElementsByClassName('filterBox'));
+
+accordionBtn.forEach((item)=>{
+  item.addEventListener('click', function () {
+    item.nextElementSibling.classList.toggle('active');
+    item.querySelector('svg:last-child').classList.toggle('active');
+  })
+})
+accordionBtn2.forEach((item)=>{
+  item.addEventListener('click', function () {
+    item.nextElementSibling.classList.toggle('active');
+    item.querySelector('svg:last-child').classList.toggle('active');
+  })
+})
+accordionBtn3.forEach((item)=>{
+  item.addEventListener('click', function () {
+    item.parentElement.classList.toggle('active');
+    item.nextElementSibling.classList.toggle('active');
+    item.querySelector('svg:last-child').classList.toggle('active');
+  })
+})

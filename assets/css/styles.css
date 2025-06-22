@@ -425,14 +425,17 @@ header nav ul>li>a.active::after {
     right: 0;
     width: 100%;
 }
+.accordionBtn svg path{
+    transition: all .4s;
+}
 header div.z-10000 {
     border-top-left-radius: 30px;
     border-top-right-radius: 30px;
 }
-header ul li:hover, header ul .dropdownMenu > a:hover, .mobileMenu a:hover, .tabs:hover, header ul li.active, header ul .dropdownMenu > a.active, .mobileMenu a.active, .tabs.active, .tabs2.active {
+header ul li:hover, header ul .dropdownMenu > a:hover,.mobileMenu a.active, .mobileMenu a:hover, .tabs:hover, header ul li.active, header ul .dropdownMenu > a.active, .mobileMenu a.active, .tabs.active, .tabs2.active {
   color: #e62b2a !important;
 }
-header ul .dropdownMenu > a.active svg path, .mobileMenu a.active svg path, .tabs.active svg path, .tabs2.active svg path {
+header ul .dropdownMenu > a.active svg path, .mobileMenu a.active svg path, .tabs.active svg path, .tabs2.active svg path,.accordionBtn:hover svg path,.accordionBtn.active svg path {
   fill: #e62b2a !important;
 }
 .tabContent > div,.tabContent2 > div{
@@ -440,6 +443,9 @@ header ul .dropdownMenu > a.active svg path, .mobileMenu a.active svg path, .tab
 }
 .tabContent > div.active,.tabContent2 > div.active{
     display: block!important;
+}
+.tabContent2 a:hover{
+    color: #e62b2a !important;
 }
 .dropdownMenu a{
     color: black;
@@ -454,6 +460,21 @@ header ul .dropdownMenu > a.active svg path, .mobileMenu a.active svg path, .tab
   opacity: 100%;
   visibility: visible;
   top: 20px;
+}
+.accordionBtn svg:last-child {
+  transition: all .4s;
+  transform: rotate(90deg);
+}
+.accordionContent {
+  max-height: 0;
+  transition: all .4s;
+  overflow: hidden;
+}
+.accordionContent.active {
+  max-height: 2000px;
+}
+.accordionBtn svg:last-child.active {
+  transform: rotate(270deg);
 }
 /* products page */
 .productCard {
